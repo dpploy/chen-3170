@@ -6,7 +6,10 @@ Click on the `launch/binder` badge below to launch a Jupyter Notebook server for
 course notebooks. There will be a delay for the Binder cloud server to create a
 virtual machine for you. However once it is done, it will start a Jupyter Notebook
 server on your web browser with all notebooks listed. Upon clicking on individual notebook
-files, you will access the course notebooks.
+files, you will access the live course notebooks.
+
+Static HTML versions of the notebooks will be displayed on the current browser if a notebook 
+file listed in the code repository is clicked on.
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/dpploy/chen-3170.git/master)
 
