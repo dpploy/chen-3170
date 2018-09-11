@@ -6,8 +6,8 @@ Static HTML versions of the notebooks will be displayed on the current browser i
 file listed in the code repository is clicked on.
 
 Click on the `launch/binder` badge below to launch a Jupyter Notebook server for the
-course notebooks. There will be a delay for the Binder cloud server to create a
-virtual machine for you. However once it is done, it will start a Jupyter Notebook
+course notebooks. There will be a delay for the Binder cloud server to build a Anaconda
+environment for you. However once it is done, it will start a Jupyter Notebook
 server on your web browser with all notebooks listed. Upon clicking on individual notebook
 files, you will access the live course notebooks.
 
