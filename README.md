@@ -1,6 +1,9 @@
 # ChEn-3170 Computational Methods in Chemical Engineering [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/dpploy/chen-3170/master)
+---
     University of Massachusetts Lowell, Fall 2018  
     Prof. Valmor F. de Almeida
+
+---
 
 Static HTML versions of the notebooks will be displayed on the current browser if a notebook 
 file listed in the code repository is clicked on.
