@@ -1,6 +1,6 @@
 # ChEn-3170 Computational Methods in Chemical Engineering
     University of Massachusetts Lowell, Fall 2018  
-    Prof. V. F. de Almeida
+    Prof. Valmor F. de Almeida
 
 Static HTML versions of the notebooks will be displayed on the current browser if a notebook 
 file listed in the code repository is clicked on.
