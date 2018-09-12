@@ -5,7 +5,7 @@
 
 This course uses Jupyter Notebooks in Python programming language. The content can accessed in
 two ways:
-+ Static HTML versions of the notebooks will be displayed on the current browser if a 
++ Static HTML version of the notebooks will be displayed on the current browser if a 
 notebook file listed in the code repository is clicked on.
 + Click on the `launch/binder` badge above to launch a Jupyter Notebook server for the
 course notebooks. There will be a delay for the Binder cloud server to build a 
