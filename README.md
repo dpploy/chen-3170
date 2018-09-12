@@ -3,7 +3,7 @@
     University of Massachusetts Lowell, Fall 2018  
     Prof. Valmor F. de Almeida (valmor_dealmeida@uml.edu)
 
-This course uses Jupyter Notebooks in Python programming language. The content can accessed in
+This course uses Jupyter Notebooks in Python programming language. The content can be accessed in
 two ways:
 + Static HTML version of the notebooks will be displayed on the current browser if a 
 notebook file listed in the code repository is clicked on.
