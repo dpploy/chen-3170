@@ -6,3 +6,4 @@ pytest-xdist
 pytest-timeout
 pytest-cov
 pytest-pep8
+cortix==0.0.2
