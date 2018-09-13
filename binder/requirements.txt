@@ -6,4 +6,5 @@ pytest-xdist
 pytest-timeout
 pytest-cov
 pytest-pep8
+networkx>=1.11
 cortix==0.0.2
