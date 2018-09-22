@@ -6,7 +6,7 @@
 This course uses Jupyter Notebooks in Python programming language. The content can be accessed in
 the following ways:
 + Static HTML version of the notebooks will be displayed on the current browser if a 
-notebook file listed in the code repository is clicked on.
+notebook file listed in the code repository is clicked on. Alternatively you can render the notebooks on [NBViewer](http://nbviewer.jupyter.org/).
 + Click on the `launch/binder` badge above to launch a Jupyter Notebook server for the
 course notebooks. There will be a delay for the Binder cloud server to build a 
 Python (Anaconda) programming environment for you. However once it is done, it will 
