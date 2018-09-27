@@ -4,3 +4,4 @@ pandas
 pytest
 networkx
 cortix
+scipy
