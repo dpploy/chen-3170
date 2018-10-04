@@ -38,9 +38,8 @@ def get_triangular_matrix( mode='lower', ndim=None, mtrx=None ):
     '''
 
     assert ndim is None or mtrx is None, 'ndim or mtrx must be given; not both.'
+    assert not (ndim is None and mtrx is None), 'either ndim or mtrx must be given.'
     assert mode =='lower' or mode =='upper', 'invalid mode %r.'%mode
-    if ndim is None and mtrx is None:
-       assert False,'ndim or mtrx must be given.'
     
     if mtrx is None:
         import numpy as np
