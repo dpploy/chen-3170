@@ -1,7 +1,7 @@
 # local
 lab*
 mid-term*
-in_house
+toolkit.py
 *.swp
 # Byte-compiled / optimized / DLL files
 __pycache__/
