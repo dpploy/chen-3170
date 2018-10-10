@@ -19,7 +19,7 @@ def get_triangular_matrix( mode='lower', ndim=None, mtrx=None ):
           Dimension of the square matrix. If a matrix is not provided this 
           argument is required. 
     mtrx: numpy.ndarray, optional
-          square matrix to be turned into a triangular matrix
+          square matrix to be turned into a triangular matrix.
     
     Returns
     -------
