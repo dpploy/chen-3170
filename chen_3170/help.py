@@ -122,3 +122,77 @@ def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product'):
         
     return x_vec  
 #*********************************************************************************
+def plot_matrix(mtrx, color_map='bw', title=None):
+    '''
+    Plot matrix as an image.
+    
+    Parameters
+    ----------
+    mtrx: numpy.ndarray, required
+          Matrix data. 
+    color_map: str, optional 
+               Color map for image: 'bw' black and white
+    title: str, optional 
+           Title for plot.     
+            
+    Returns
+    -------
+    None: 
+           
+    Examples
+    --------
+
+    '''
+
+    # sanity check
+    import numpy as np
+    assert isinstance(mtrx,np.ndarray)
+    import numpy as np
+    from matplotlib import pyplot as plt # import the pyplot function of the matplotlib package
+    # end of sanity check
+
+    plt.rcParams['figure.figsize'] = [20, 4] # extend the figure size on screen output
+
+    plt.figure(1)
+    if color_map == 'bw':
+        plt.imshow(np.abs(mtrx),cmap='gray')
+    else:
+        plt.imshow(mtrx,cmap=color_map)
+    if title is not None: 
+        plt.title(title,fontsize=14)
+    print('matrix shape =',mtrx.shape)  # inspect the array shape
+
+    plt.show()
+
+    return
+#*********************************************************************************
+def print_reactions(reactions):
+    '''
+    Nice printout of a reactions list.
+    
+    Parameters
+    ----------
+    reactions: list(str)
+          Reactions in the form of a list.
+            
+    Returns
+    -------
+    None: 
+           
+    Examples
+    --------
+
+    '''
+    # sanity check
+    assert isinstance(reactions,list)
+    # end of sanity check
+
+    for r in reactions: 
+        i = reactions.index(r)
+        print('r%s'%i,': ',r)
+    
+    n_reactions = len(reactions)  
+    print('n_reactions =',n_reactions)
+
+    return
+#*********************************************************************************
