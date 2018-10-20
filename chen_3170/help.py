@@ -196,3 +196,49 @@ def print_reactions(reactions):
 
     return
 #*********************************************************************************
+def print_reaction_mechanisms( mechanisms, mode=None ):
+    '''
+    Nice printout of a scored reaction mechanims list
+    
+    Parameters
+    ----------
+    mechanims: list(str), required
+          Sorted reaction mechanims in the form of a list.
+
+    mode: string, optional
+          Printing mode: all, top, None
+            
+    Returns
+    -------
+    None: 
+           
+    Examples
+    --------
+
+    '''
+    # sanity check
+    assert isinstance(mechanisms,list)
+    # end of sanity check
+
+    if mode is None:
+        mode = 'all'
+
+    print_n_mechanisms = len(mechanisms)
+
+    if mode == 'top':
+      scores = [sm[3] for sm in mechanisms]
+      max_score = max(scores)
+      tmp = list()
+      for s in scores:
+          if s == max_score:
+              tmp.append(s)
+      print_n_mechanisms = len(tmp)
+
+    for rm in mechanisms:
+        if mechanisms.index(rm) > print_n_mechanisms-1: continue
+        print('Reaction Mechanism: %s (score %4.2f)'%(mechanisms.index(rm),rm[3]))
+        for (i,r) in zip( rm[0], rm[1] ):
+            print('r%s'%i,r)
+
+    return
+#*********************************************************************************
