@@ -196,7 +196,7 @@ def print_reactions(reactions):
 
     return
 #*********************************************************************************
-def print_reaction_mechanisms( mechanisms, mode=None ):
+def print_reaction_mechanisms( mechanisms, mode=None, print_n_mechanisms=None ):
     '''
     Nice printout of a scored reaction mechanims list
     
@@ -206,7 +206,7 @@ def print_reaction_mechanisms( mechanisms, mode=None ):
           Sorted reaction mechanims in the form of a list.
 
     mode: string, optional
-          Printing mode: all, top, None
+          Printing mode: all, top, None. Default: all
             
     Returns
     -------
@@ -217,22 +217,27 @@ def print_reaction_mechanisms( mechanisms, mode=None ):
 
     '''
     # sanity check
-    assert isinstance(mechanisms,list)
+    assert mode is None or print_n_mechanisms is None
+    assert mode =='top' or mode =='all' or mode==None
+    assert isinstance(print_n_mechanisms,int) or print_n_mechanisms is None
     # end of sanity check
 
-    if mode is None:
+    if mode is None and print_n_mechanisms is None:
         mode = 'all'
 
-    print_n_mechanisms = len(mechanisms)
-
-    if mode == 'top':
-      scores = [sm[3] for sm in mechanisms]
-      max_score = max(scores)
-      tmp = list()
-      for s in scores:
-          if s == max_score:
-              tmp.append(s)
-      print_n_mechanisms = len(tmp)
+    if print_n_mechanisms is None:
+        if mode == 'all':
+            print_n_mechanisms = len(mechanisms)
+        elif mode == 'top':
+            scores = [sm[3] for sm in mechanisms]
+            max_score = max(scores)
+            tmp = list()
+            for s in scores:
+                if s == max_score:
+                    tmp.append(s)
+            print_n_mechanisms = len(tmp)
+        else:
+            assert False, 'illegal mode %r'%mode
 
     for rm in mechanisms:
         if mechanisms.index(rm) > print_n_mechanisms-1: continue
