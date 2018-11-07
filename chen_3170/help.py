@@ -247,3 +247,96 @@ def print_reaction_mechanisms( mechanisms, mode=None, print_n_mechanisms=None ):
 
     return
 #*********************************************************************************
+def read_arrhenius_experimental_data(filename):
+    '''
+    Read k versus T data for fitting an Arrhenius rate constant expression.
+    
+    Parameters
+    ----------
+    filename: string, required
+            File name of data file including the path.
+            
+    Returns
+    -------
+    r_cte: float
+        Universal gas constant.
+    r_cte: string
+        Universal gas constant unit.
+    n_pts: int
+        Number of data points
+    temp: np.ndarray, float
+        Temperature data.
+    k_cte: np.ndarray, float
+        Reaction rate constant data.
+           
+    Examples
+    --------
+    
+    '''        
+
+    import io                     # import io module
+    finput = open(filename, 'rt') # create file object
+
+    import numpy as np
+
+    for line in finput:
+    
+        line = line.strip()
+    
+        if line[0] == '#': # skip comments in the file
+            continue
+        
+        var_line = line.split(' = ')
+    
+        if var_line[0] == 'r_cte':
+            r_cte = float(var_line[1].split(' ')[0])
+            r_cte_units = var_line[1].split(' ')[1]
+        elif var_line[0] == 'n_pts':
+            n_pts = int(var_line[1])
+            temp  = np.zeros(n_pts)
+            k_cte = np.zeros(n_pts)
+            idx   = 0 # counter
+        else:
+            data = line.split(' ')
+            temp[idx]  = float(data[0])
+            k_cte[idx] = float(data[1])
+            idx += 1
+            
+    return (r_cte, r_cte_units, n_pts, temp, k_cte)
+
+#*********************************************************************************
+def plot_arrhenius_experimental_data( temp, k_cte ):
+    
+    '''
+    Plot T versus k data for fitting an Arrhenius rate constant expression.
+    
+    Parameters
+    ----------
+    temp: nd.array, required
+        Temperature data. 
+    k_cte: nd.array, required
+        Reaction rate constant data.
+            
+    Returns
+    -------
+    None: None
+           
+    Examples
+    --------
+    
+    '''   
+
+    import matplotlib.pyplot as plt
+
+    plt.figure(1, figsize=(7, 7))
+
+    plt.plot(temp, k_cte,'r*',label='experimental')
+    plt.xlabel(r'$T$ [K]',fontsize=14)
+    plt.ylabel(r'$k$ [s$^{-1}$]',fontsize=14)
+    plt.title('Arrhenius Rxn Rate Constant Data',fontsize=20)
+    plt.legend(loc='best',fontsize=12)
+    plt.grid(True)
+    plt.show()
+    print('')
+
+    return
