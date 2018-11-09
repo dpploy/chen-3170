@@ -5,3 +5,4 @@ pytest
 networkx
 cortix
 scipy
+plotly
