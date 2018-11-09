@@ -1,6 +1,6 @@
 # ChEn-3170 Computational Methods in Chemical Engineering 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/dpploy/chen-3170/master)
-[![NBViewer](https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg)](http://nbviewer.jupyter.org/github/dpploy/chen-3170/notebooks)
+[![NBViewer](https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg)](http://nbviewer.jupyter.org/github/dpploy/chen-3170/tree/master/notebooks)
 
     University of Massachusetts Lowell, Fall 2018  
     Prof. Valmor F. de Almeida (valmor_dealmeida@uml.edu)
