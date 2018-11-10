@@ -3,6 +3,8 @@ solvent*
 xx*
 tbp*
 lab*
+*.svg
+*.prb
 mid-term*
 toolkit.py
 *.swp
