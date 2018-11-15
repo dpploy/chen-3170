@@ -15,3 +15,5 @@ Python (Anaconda) programming environment for you. However once it is done, it w
 start a Jupyter Notebook server on your web browser with all notebooks listed. Upon 
 clicking on individual notebook files, you will access the live course notebooks.
 + Use the green `download` button above on the right upper side of the page and download a ZIP archive to your local machine. Unzip the archive. Then use your own Jupyter Notebook server to navigate to the directory created by the unzip operation and upload the notebook files. In this case the files will not be updated and you will need to return to the repository for getting new files or updated versions of previously downloaded files.
+
+GitHub allows for feedback and collaboration through pull request and issues. Thanks in advance for inputs to improve this course.
