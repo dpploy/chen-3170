@@ -6,3 +6,4 @@ networkx
 cortix
 scipy
 plotly
+ipywidgets
