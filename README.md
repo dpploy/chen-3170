@@ -25,5 +25,9 @@ Regards,\
 Valmor.
 
 
+<div>
+    <a href="https://plot.ly/~dealmeidavf/1/?share_key=EwA052fWxl859j0CWc1VeD" target="_blank" title="urban-no2-lsf" style="display: block; text-align: center;"><img src="https://plot.ly/~dealmeidavf/1.png?share_key=EwA052fWxl859j0CWc1VeD" alt="urban-no2-lsf" style="max-width: 100%;width: 970px;"  width="970" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="dealmeidavf:1" sharekey-plotly="EwA052fWxl859j0CWc1VeD" src="https://plot.ly/embed.js" async></script>
+</div>
 
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~dealmeidavf/1.embed"></iframe>
+
