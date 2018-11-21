@@ -11,7 +11,7 @@ The goal of this course is to present to students of chemical engineering an int
 
 This three-credit lecture course (and one additional contact hour) over fourteen weeks, consists of Jupyter notebooks used for lectures (numbered 01 to XX) and laboratory work (labwork-01 to XX) for students to practice their skills in computer-aided problem solving (see `notebooks/`). The assumption is that students have very little computer pragramming experience and have not taken any of the core courses in chemical engineering. Therefore this course is a mix of computational methods and computer programming (in python language) aimed at helping students in the remaining portion of their curriculum course work. 
 
-Feedback and collaboration are welcome through GitHub `pull requests` and `issues` or direct email. 
+Feedback and collaboration to improve this course are welcome through GitHub `pull requests` and `issues` or direct email. 
 
 This course uses Jupyter Notebooks in Python programming language. The content can be accessed in
 the following ways:
