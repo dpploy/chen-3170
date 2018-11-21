@@ -7,7 +7,7 @@
     University of Massachusetts Lowell, Fall 2018  
     Prof. Valmor F. de Almeida (valmor_dealmeida@uml.edu)
 
-The goal of this course is to present to students of chemical engineering an interconnected set of computational methods needed in the core undergraduate chemical engineering curriculum. In particular, methods that assist the students to solve problems in the core area of chemical reactor engineering.
+The goal of this course is to present to students of chemical engineering an interconnected set of computational methods needed in the core undergraduate chemical engineering curriculum. In particular, methods that assist the students to solve problems in the core areas of chemical reactor engineering and separations including the nuclear fuel cycle.
 
 This three-credit lecture course (and one additional contact hour) over fourteen weeks, consists of Jupyter notebooks used for lectures (numbered 01 to XX) and laboratory work (labwork-01 to XX) for students to practice their skills in computer-aided problem solving (see `notebooks/`). The assumption is that students have very little computer pragramming experience and have not taken any of the core courses in chemical engineering. Therefore this course is a mix of computational methods and computer programming (in python language) aimed at helping students in the remaining portion of their curriculum course work. 
 
