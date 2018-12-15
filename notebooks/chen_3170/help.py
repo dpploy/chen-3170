@@ -340,3 +340,44 @@ def plot_arrhenius_experimental_data( temp, k_cte ):
     print('')
 
     return
+
+#*********************************************************************************
+def color_map( num_colors ):
+
+    assert num_colors > 1
+
+    import numpy as np
+
+    # primary colors
+    # use the RGBA decimal code
+    red     = np.array((1,0,0,1))
+    blue    = np.array((0,0,1,1))
+    magenta = np.array((1,0,1,1))
+    green   = np.array((0,1,0,1))
+    orange  = np.array((1,0.5,0,1))
+    black   = np.array((0,0,0,1))
+    yellow  = np.array((1,1,0,1))
+    cyan    = np.array((0,1,1,1))
+
+    # order the primary colors here
+    color_map = list()
+    color_map = [ red, blue, orange, magenta, green, yellow, black, cyan]
+
+    num_primary_colors = len(color_map)
+
+    if num_colors <= num_primary_colors:
+        return color_map[:num_colors]
+
+    # interpolate primary colors
+    while len(color_map) < num_colors:
+        j = 0
+        for i in range(len(color_map)-1):
+            color_a = color_map[2*i]
+            color_b = color_map[2*i+1]
+            mid_color = (color_a+color_b)/2.0
+            j = 2*i+1
+            color_map.insert(j,mid_color) # insert before index
+            if len(color_map) == num_colors:
+                break
+
+    return color_map

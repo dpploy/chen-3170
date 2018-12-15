@@ -1,0 +1,7 @@
+#
+# Production of ethylene and acetylene from ethane
+#
+..str:float:str
+C2H6 <=> C2H4 +   H2  : DeltaGstd = 24142 : DeltaHstd(T) = 31094+6.101*T-1.46e-3*T**2-2.222e-6*T**3+9.843e-10*T**4
+C2H6 <=> C2H2 + 2 H2  : DeltaGstd = 57860 : DeltaHstd(T) = 69936+18.082*T-1.0e-2*T**2-6.617e-7*T**3+1.236e-9*T**4
+C2H4 <=> C2H2 +   H2  : DeltaGstd = 33718 : DeltaHstd(T) = 38842+11.981*T-8.546e-3*T**2+1.561e-6*T**3+2.517e-10*T**4
