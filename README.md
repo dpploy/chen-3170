@@ -2,10 +2,11 @@
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/dpploy/chen-3170/master)
 [![NBViewer](https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg)](http://nbviewer.jupyter.org/github/dpploy/chen-3170/tree/master/notebooks)
 
-![](notebooks/images/ls-fourier.png)
-
-    University of Massachusetts Lowell, Fall 2018  
+    University of Massachusetts Lowell, Fall 2018
+    Dept. of Chemical Engineering
     Prof. Valmor F. de Almeida (valmor_dealmeida@uml.edu)
+
+![](notebooks/images/ls-fourier.png)
 
 The goal of this course is to present to students of chemical engineering an interconnected set of computational methods needed in the core undergraduate chemical engineering curriculum. In particular, methods that assist the students in solving problems in the core areas of chemical reactor engineering and separations with applications in nuclear and biochemical engineering.
 
