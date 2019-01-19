@@ -2,8 +2,6 @@ matplotlib
 numpy
 pandas
 pytest
-networkx
-cortix
 scipy
 plotly
 ipywidgets
