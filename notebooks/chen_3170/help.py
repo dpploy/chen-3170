@@ -344,7 +344,7 @@ def plot_arrhenius_experimental_data( temp, k_cte ):
 #*********************************************************************************
 def color_map( num_colors ):
 
-    assert num_colors > 1
+    assert num_colors >= 1
 
     import numpy as np
 

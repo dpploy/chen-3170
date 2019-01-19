@@ -1,6 +1,7 @@
-H2+Br2<=>2 HBr
-Br2<=>2 Br      
-Br+H2<=>HBr+H
-H+Br2<=>HBr+Br
-H+HBr<=>H2+Br
-2 Br<=>Br2
+..str:
+H2 + Br2 <=> 2 HBr
+Br2 <=> 2 Br      
+Br + H2 <=> HBr + H
+H + Br2 <=> HBr + Br
+H + HBr <=> H2 + Br
+2 Br <=> Br2
