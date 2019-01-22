@@ -1,6 +1,7 @@
 #
 # Ammonia oxidation mechanism
 #
+..str:float
 4 NH3 + 5 O2        <=> 4 NO  + 6 H2O : K_x = 2.5e+02
 4 NH3 + 3 O2        <=> 2 N2  + 6 H2O : K_x = 1.8e+02
 4 NH3 + 6 NO        <=> 5 N2  + 6 H2O : K_x = 1.099692e+02

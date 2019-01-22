@@ -1,0 +1,10 @@
+#
+# N2O5 decomposition mechanism
+#
+..str
+2 N2O5         <=> 2 N2O4 + 1 O2
+1 N2O5         <=> 1 NO2  + 1 NO3
+1 NO2 + 1 NO3  <=> 1 N2O5
+1 NO3          <=> 1 O2 + 1 NO
+1 NO  + 1 N2O5 <=> 3 NO2
+2 NO2          <=> 1 N2O4
