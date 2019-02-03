@@ -2,7 +2,7 @@
 [![Home](https://img.shields.io/website-up-down-green-red/https/github.com/dpploy/chen-3170.svg?label=home&style=flat)](https://github.com/dpploy/chen-3170)
 [![Size](https://img.shields.io/github/repo-size/dpploy/chen-3170.svg?label=size&style=flat)](https://github.com/dpploy/chen-3170)
 [![Azure Notebooks](https://notebooks.azure.com/launch.svg)](https://notebooks.azure.com/dealmeidavf/projects/chen-3170-spring-19)
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/dpploy/chen-3170/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dpploy/chen-3170/master)
 [![NBViewer](https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg)](http://nbviewer.jupyter.org/github/dpploy/chen-3170/tree/master/notebooks)
 
     University of Massachusetts Lowell, Fall 2018
