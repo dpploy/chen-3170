@@ -1,3 +1,4 @@
+pip
 matplotlib
 numpy
 pandas
@@ -5,3 +6,4 @@ pytest
 scipy
 plotly
 ipywidgets
+jupyter_contrib_nbextensions
