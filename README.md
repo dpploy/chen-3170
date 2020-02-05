@@ -1,9 +1,11 @@
 # ChEn-3170 Computational Methods in Chemical Engineering 
+
+[![NBViewer](https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg)](http://nbviewer.jupyter.org/github/dpploy/chen-3170/tree/master/notebooks)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dpploy/chen-3170/master)
+[![Azure Notebooks](https://notebooks.azure.com/launch.svg)](https://notebooks.azure.com/dealmeidavf/projects/chen-3170a)
+
 ![Website](https://img.shields.io/website/https/github.com/dpploy/chen-3170.svg)
 [![Size](https://img.shields.io/github/repo-size/dpploy/chen-3170.svg?label=size&style=flat)](https://github.com/dpploy/chen-3170)
-[![Azure Notebooks](https://notebooks.azure.com/launch.svg)](https://notebooks.azure.com/dealmeidavf/projects/chen-3170a)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dpploy/chen-3170/master)
-[![NBViewer](https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg)](http://nbviewer.jupyter.org/github/dpploy/chen-3170/tree/master/notebooks)
 
    + [University of Massachusetts Lowell](https://www.uml.edu/), Spring 2020
    + [Dept. of Chemical Engineering](https://www.uml.edu/Engineering/Chemical/)
