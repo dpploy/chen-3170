@@ -1,9 +1,12 @@
+#
+# Methane oxidation with catalyst
+#
 ..str
-CO(g) + S <=> CO(s)
-CO(s) + S <=> C(s) + O(s)
-O(s) + H2(g) <=> H2O(g)+S
-H2(g) + 2 S <=> 2 H(s)
-C(s) + H(s) <=> CH(s) + S
-CH(s) + H(s) <=> CH2(s) + S
-CH2(s) + H(s) <=> CH3(s) + S
-CH3(s) + H(s) <=> CH4(g) + 2 S
+CO(g)  + S     <=> CO(s)
+CO(s)  + S     <=> C(s)   + O(s)
+O(s)   + H2(g) <=> H2O(g) + S
+H2(g)  + 2 S   <=> 2 H(s)
+C(s)   + H(s)  <=> CH(s)  + S
+CH(s)  + H(s)  <=> CH2(s) + S
+CH2(s) + H(s)  <=> CH3(s) + S
+CH3(s) + H(s)  <=> CH4(g) + 2 S
