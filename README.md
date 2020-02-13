@@ -33,4 +33,4 @@ clicking on individual notebook files, you will access the live course notebooks
 
 Thanks in advance for inputs to improve this course.\
 Regards,\
-Valmor.
+Prof. Valmor F. de Almeida
