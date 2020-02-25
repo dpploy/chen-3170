@@ -6,21 +6,21 @@ def get_triangular_matrix( mode='lower', ndim=None, mtrx=None ):
     '''
     Returns a triangular matrix in-place.
 
-    If a matrix is given, the function will modify the input, in place, into a 
+    If a matrix is given, the function will modify the input, in place, into a
     triangular matrix. The mtrx object will be modified and reflected on the callee side.
     Otherwise, the function generates a random triangular matrix.
 
     Parameters
     ----------
     mode: string, optional
-          Type of triangular matrix: 'lower' or 'upper'. Defaults to lower 
+          Type of triangular matrix: 'lower' or 'upper'. Defaults to lower
           triangular.
     ndim: int, optional
-          Dimension of the square matrix. If a matrix is not provided this 
-          argument is required. 
+          Dimension of the square matrix. If a matrix is not provided this
+          argument is required.
     mtrx: numpy.ndarray, optional
           square matrix to be turned into a triangular matrix.
-    
+
     Returns
     -------
     mtrx: numpy.ndarray
@@ -41,13 +41,13 @@ def get_triangular_matrix( mode='lower', ndim=None, mtrx=None ):
     assert ndim is None or mtrx is None, 'ndim or mtrx must be given; not both.'
     assert not (ndim is None and mtrx is None), 'either ndim or mtrx must be given.'
     assert mode =='lower' or mode =='upper', 'invalid mode %r.'%mode
-    
+
     if mtrx is None:
         import numpy as np
         mtrx = np.random.random((ndim,ndim))
     else:
-        assert mtrx.shape[0] == mtrx.shape[1], 'matrix not square.' 
-    
+        assert mtrx.shape[0] == mtrx.shape[1], 'matrix not square.'
+
     # ready to return matrix  
     if mode == 'lower':
         for i in range(mtrx.shape[0]):
@@ -63,7 +63,7 @@ def get_triangular_matrix( mode='lower', ndim=None, mtrx=None ):
 def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product'):
     '''
     Performs a forward solve with a lower triangular matrix and right side vector.
-    
+
     Parameters
     ----------
     l_mtrx: numpy.ndarray, required
@@ -71,21 +71,21 @@ def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product'):
     b_vec:  numpy.ndarray, required
             Right-side vector.
     loop_option: string, optional
-            This is an internal option to demonstrate the usage of an explicit 
-            double loop or an implicit loop using a dot product. 
+            This is an internal option to demonstrate the usage of an explicit
+            double loop or an implicit loop using a dot product.
             Default: 'use-dot-product'
-            
+
     Returns
     -------
     x_vec: numpy.narray
            Solution vector returned.
-           
+
     Examples
     --------
-    
-    '''        
+
+    '''
     import numpy as np
-    
+
     # sanity test
     assert isinstance(l_mtrx,np.ndarray)      # l_mtrx must be np.ndarray
     assert l_mtrx.shape[0] == l_mtrx.shape[1],'non-square matrix.' # l_mtrx must be square
@@ -95,50 +95,50 @@ def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product'):
     assert b_vec.shape[0] == l_mtrx.shape[0],'incompatible l_mtrx @ b_vec dimensions'  # b_vec must be compatible to l_mtrx
     assert loop_option == 'use-dot-product' or loop_option == 'use-double-loop'
     # end of sanity test
-    
+
     m_rows = l_mtrx.shape[0]
     n_cols = m_rows
     x_vec = np.zeros(n_cols)
-    
+
     if loop_option == 'use-dot-product':
-        
+
         for i in range(m_rows):
             sum_lx = np.dot( l_mtrx[i,:i], x_vec[:i] )
             #sum_lx = l_mtrx[i,:i] @ x_vec[:i] # matrix-vec mult. alternative to dot product
             x_vec[i] = b_vec[i] - sum_lx
             x_vec[i] /= l_mtrx[i,i]
-            
+
     elif loop_option == 'use-double-loop':
-             
+
         for i in range(m_rows):
             sum_lx = 0.0
             for j in range(i):
                 sum_lx += l_mtrx[i,j] * x_vec[j]
             x_vec[i] = b_vec[i] - sum_lx
             x_vec[i] /= l_mtrx[i,i]
-               
+
     else:
         assert False, 'not allowed option: %r'%loop_option
-        
-    return x_vec  
+
+    return x_vec
 #*********************************************************************************
 def plot_matrix(mtrx, color_map='bw', title=None):
     '''
     Plot matrix as an image.
-    
+
     Parameters
     ----------
     mtrx: numpy.ndarray, required
-          Matrix data. 
-    color_map: str, optional 
+          Matrix data.
+    color_map: str, optional
                Color map for image: 'bw' black and white
-    title: str, optional 
-           Title for plot.     
-            
+    title: str, optional
+           Title for plot.
+
     Returns
     -------
-    None: 
-           
+    None:
+
     Examples
     --------
 
@@ -158,7 +158,7 @@ def plot_matrix(mtrx, color_map='bw', title=None):
         plt.imshow(np.abs(mtrx),cmap='gray')
     else:
         plt.imshow(mtrx,cmap=color_map)
-    if title is not None: 
+    if title is not None:
         plt.title(title,fontsize=14)
     print('matrix shape =',mtrx.shape)  # inspect the array shape
 
@@ -169,16 +169,16 @@ def plot_matrix(mtrx, color_map='bw', title=None):
 def print_reactions(reactions):
     '''
     Nice printout of a reactions list.
-    
+
     Parameters
     ----------
     reactions: list(str)
           Reactions in the form of a list.
-            
+
     Returns
     -------
-    None: 
-           
+    None:
+
     Examples
     --------
 
@@ -187,11 +187,11 @@ def print_reactions(reactions):
     assert isinstance(reactions,list)
     # end of sanity check
 
-    for r in reactions: 
+    for r in reactions:
         i = reactions.index(r)
         print('r%s'%i,': ',r)
-    
-    n_reactions = len(reactions)  
+
+    n_reactions = len(reactions)
     print('n_reactions =',n_reactions)
 
     return
@@ -199,7 +199,7 @@ def print_reactions(reactions):
 def print_reaction_mechanisms( mechanisms, mode=None, print_n_mechanisms=None ):
     '''
     Nice printout of a scored reaction mechanims list
-    
+
     Parameters
     ----------
     mechanims: list(str), required
@@ -207,11 +207,11 @@ def print_reaction_mechanisms( mechanisms, mode=None, print_n_mechanisms=None ):
 
     mode: string, optional
           Printing mode: all, top, None. Default: all
-            
+
     Returns
     -------
-    None: 
-           
+    None:
+
     Examples
     --------
 
@@ -250,12 +250,12 @@ def print_reaction_mechanisms( mechanisms, mode=None, print_n_mechanisms=None ):
 def read_arrhenius_experimental_data(filename):
     '''
     Read k versus T data for fitting an Arrhenius rate constant expression.
-    
+
     Parameters
     ----------
     filename: string, required
             File name of data file including the path.
-            
+
     Returns
     -------
     r_cte: float
@@ -268,11 +268,11 @@ def read_arrhenius_experimental_data(filename):
         Temperature data.
     k_cte: np.ndarray, float
         Reaction rate constant data.
-           
+
     Examples
     --------
-    
-    '''        
+
+    '''
 
     import io                     # import io module
     finput = open(filename, 'rt') # create file object
@@ -280,14 +280,14 @@ def read_arrhenius_experimental_data(filename):
     import numpy as np
 
     for line in finput:
-    
+
         line = line.strip()
-    
+
         if line[0] == '#': # skip comments in the file
             continue
-        
+
         var_line = line.split(' = ')
-    
+
         if var_line[0] == 'r_cte':
             r_cte = float(var_line[1].split(' ')[0])
             r_cte_units = var_line[1].split(' ')[1]
@@ -301,30 +301,29 @@ def read_arrhenius_experimental_data(filename):
             temp[idx]  = float(data[0])
             k_cte[idx] = float(data[1])
             idx += 1
-            
-    return (r_cte, r_cte_units, n_pts, temp, k_cte)
 
+    return (r_cte, r_cte_units, n_pts, temp, k_cte)
 #*********************************************************************************
 def plot_arrhenius_experimental_data( temp, k_cte ):
-    
+
     '''
     Plot T versus k data for fitting an Arrhenius rate constant expression.
-    
+
     Parameters
     ----------
     temp: nd.array, required
-        Temperature data. 
+        Temperature data.
     k_cte: nd.array, required
         Reaction rate constant data.
-            
+
     Returns
     -------
     None: None
-           
+
     Examples
     --------
-    
-    '''   
+
+    '''
 
     import matplotlib.pyplot as plt
 
@@ -340,7 +339,6 @@ def plot_arrhenius_experimental_data( temp, k_cte ):
     print('')
 
     return
-
 #*********************************************************************************
 def color_map( num_colors ):
 
