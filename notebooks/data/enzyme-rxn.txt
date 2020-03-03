@@ -1,5 +1,10 @@
-E+S<=>E*S
-E+I<=>I*E
-I+E*S<=>I*E*S
-S+I*E<=>I*E*S
-E*S<=>P+E
+#
+# Enzyme reactions
+#
+# format
+..str
+E + S <=> E*S
+E + I <=> I*E
+I + E*S <=> I*E*S
+S + I*E <=> I*E*S
+E*S <=> P + E

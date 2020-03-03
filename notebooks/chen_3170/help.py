@@ -196,13 +196,13 @@ def print_reactions(reactions):
 
     return
 #*********************************************************************************
-def print_reaction_mechanisms( mechanisms, mode=None, print_n_mechanisms=None ):
+def print_reaction_sub_mechanisms( sub_mechanisms, mode=None, print_n_sub_mech=None ):
     '''
-    Nice printout of a scored reaction mechanims list
+    Nice printout of a scored reaction sub-mechanism list
 
     Parameters
     ----------
-    mechanims: list(str), required
+    sub_mechanims: list(str), required
           Sorted reaction mechanims in the form of a list.
 
     mode: string, optional
@@ -217,31 +217,31 @@ def print_reaction_mechanisms( mechanisms, mode=None, print_n_mechanisms=None ):
 
     '''
     # sanity check
-    assert mode is None or print_n_mechanisms is None
+    assert mode is None or print_n_sub_mech is None
     assert mode =='top' or mode =='all' or mode==None
-    assert isinstance(print_n_mechanisms,int) or print_n_mechanisms is None
+    assert isinstance(print_n_sub_mech,int) or print_n_sub_mech is None
     # end of sanity check
 
-    if mode is None and print_n_mechanisms is None:
+    if mode is None and print_n_sub_mech is None:
         mode = 'all'
 
-    if print_n_mechanisms is None:
+    if print_n_sub_mech is None:
         if mode == 'all':
-            print_n_mechanisms = len(mechanisms)
+            print_n_sub_mech = len(sub_mechanisms)
         elif mode == 'top':
-            scores = [sm[3] for sm in mechanisms]
+            scores = [sm[3] for sm in sub_mechanisms]
             max_score = max(scores)
             tmp = list()
             for s in scores:
                 if s == max_score:
                     tmp.append(s)
-            print_n_mechanisms = len(tmp)
+            print_n_sub_mech = len(tmp)
         else:
             assert False, 'illegal mode %r'%mode
 
-    for rm in mechanisms:
-        if mechanisms.index(rm) > print_n_mechanisms-1: continue
-        print('Reaction Mechanism: %s (score %4.2f)'%(mechanisms.index(rm),rm[3]))
+    for rm in sub_mechanisms:
+        if sub_mechanisms.index(rm) > print_n_sub_mech-1: continue
+        print('Reaction Sub Mechanism: %s (score %4.2f)'%(sub_mechanisms.index(rm),rm[3]))
         for (i,r) in zip( rm[0], rm[1] ):
             print('r%s'%i,r)
 
