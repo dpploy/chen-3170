@@ -3,11 +3,11 @@
 #
 # format
 ..str
-C3H8 -> CH3* + C2H5*
-C2H5* -> C2H4 + H*
-C2H5* + C3H8 -> C2H6 + C3H7*
-CH3* + C3H8 -> CH4 + C3H7*
-C3H7* -> C2H4 + CH3*
-C3H7* -> C3H6 + H*
-C3H8 + H* -> H2 + C3H7*
-CH3* + C3H7* -> C3H6 + CH4
+C3H8 <-> CH3* + C2H5*
+C2H5* <-> C2H4 + H*
+C2H5* + C3H8 <-> C2H6 + C3H7*
+CH3* + C3H8 <-> CH4 + C3H7*
+C3H7* <-> C2H4 + CH3*
+C3H7* <-> C3H6 + H*
+C3H8 + H* <-> H2 + C3H7*
+CH3* + C3H7* <-> C3H6 + CH4

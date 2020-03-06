@@ -1,5 +1,5 @@
-NO2+hnu<=>NO+O
-O+NO2<=>NO3      
-NO3<=>NO+O2
-NO3+NO<=>2 NO2
-O+NO2<=>NO+O2
+NO2 + hnu <=> NO + O
+O + NO2 <=> NO3      
+NO3 <=> NO + O2
+NO3 + NO <=> 2 NO2
+O + NO2 <=> NO + O2

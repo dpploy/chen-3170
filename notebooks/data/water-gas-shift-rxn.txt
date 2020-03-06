@@ -2,6 +2,6 @@
 # Water-gas shift reaction
 #
 ..str
-H2O + CO <=> CO2 + H2
-H2O + H  <=> H2  + OH
-OH  + CO <=> CO2 + H
+H2O + CO <-> CO2 + H2
+H2O + H  <-> H2  + OH
+OH  + CO <-> CO2 + H
