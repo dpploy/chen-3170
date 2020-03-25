@@ -19,7 +19,7 @@ O2NO2- + e- <-> OH- + NO3-
 O2NO2H + e- <-> *OH + NO3-
 NO2- + *OH <-> *NO2 + OH-
 NO2- + e- <-> NO22-
-NO2- + H2O <-> NO + 2OH-
+NO2- + H2O <-> NO + 2 OH-
 ONO2H + e- <-> *NO2 + OH-
 NO + e- <-> NO-
 NO + H* <-> NO- + H+
