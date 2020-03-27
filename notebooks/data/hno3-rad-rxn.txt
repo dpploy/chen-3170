@@ -6,7 +6,7 @@
 #
 *NO32- + H+ <-> *NO2 + OH-
 e- + NO3- <-> *NO32-
-*NO32- + H+ <-> HNO3-_aqu
+*NO32- + H+ <-> HNO3
 *NO32- + *OH <-> NO3- + OH-
 *NO32- + O2 <-> NO3- + O2-
 N2O4 + H2O <-> NO3- + NO2- + 2 H+
@@ -44,6 +44,6 @@ HNO3- <-> *NO32- + H+
 HNO3- <-> *NO2 + *OH 
 HNO3- + O2 <-> O2*- + NO3- + H+
 HNO3- + H+ <-> H2NO3
-H2NO3 <-> HNO3- + H+_aqu
+H2NO3 <-> HNO3- + H+
 H2NO3 <-> *NO2 + H2O
 H2NO3 + O2 <-> HO2* + NO3- + H+
