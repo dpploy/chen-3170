@@ -403,7 +403,7 @@ def get_covid_19_us_data( type='deaths' ):
     Parameters
     ----------
     type:  str, optional
-            type of data. Deaths ('deaths') and confirmed cases ('confirmed').
+            Type of data. Deaths ('deaths') and confirmed cases ('confirmed').
             Default: 'deaths'.
 
     Returns
@@ -468,18 +468,28 @@ def get_covid_19_us_data( type='deaths' ):
 #*********************************************************************************
 def get_covid_19_global_data( type='deaths', distribution=True, cummulative=False ):
     '''
-    Load COVID-19 pandemic data from: https://github.com/CSSEGISandData/COVID-19
+    Load COVID-19 pandemic cummulative data from:
+
+        https://github.com/CSSEGISandData/COVID-19
 
     Parameters
     ----------
-    type:  str, optional
-            type of data. Deaths ('deahts') and confirmed cases ('confirmed').
-            Default: 'deaths'.
+    type: str, optional
+        Type of data. Deaths ('deaths') and confirmed cases ('confirmed').
+        Default: 'deaths'.
+
+    distribution: bool, optional
+        Distribution of new cases over dates.
+        Default: True
+
+    cummulative: bool, optional
+        Cummulative number of cases over dates.
+        Default: False
 
     Returns
     -------
     data: tuple(int, list(str), list(int))
-           (population, dates, data)
+           (contry_names, dates, cases)
 
     '''
 
