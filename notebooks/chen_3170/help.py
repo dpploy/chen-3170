@@ -396,18 +396,20 @@ def color_map( num_colors ):
 #*********************************************************************************
 def get_covid_19_us_data( type='deaths' ):
     '''
-    Load COVID-19 pandemic data from: https://github.com/CSSEGISandData/COVID-19
+    Load COVID-19 pandemic cummulative data from:
+
+     https://github.com/CSSEGISandData/COVID-19.
 
     Parameters
     ----------
     type:  str, optional
-            type of data. Deaths ('deahts') and confirmed cases ('confirmed').
+            type of data. Deaths ('deaths') and confirmed cases ('confirmed').
             Default: 'deaths'.
 
     Returns
     -------
     data: tuple(int, list(str), list(int))
-           (population, dates, data)
+           (population, dates, cases)
 
     '''
 
