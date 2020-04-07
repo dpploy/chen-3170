@@ -394,7 +394,7 @@ def color_map( num_colors ):
 
     return color_map
 #*********************************************************************************
-def get_covid_19_data( type='deaths' ):
+def get_covid_19_us_data( type='deaths' ):
     '''
     Load COVID-19 pandemic data from: https://github.com/CSSEGISandData/COVID-19
 
@@ -463,4 +463,64 @@ def get_covid_19_data( type='deaths' ):
         cases[:,state_id] += np.array(list(df.loc[i, df.columns[3:]]))
 
     return ( state_names, population, dates, cases )
+#*********************************************************************************
+def get_covid_19_global_data( type='deaths', distribution=True, cummulative=False ):
+    '''
+    Load COVID-19 pandemic data from: https://github.com/CSSEGISandData/COVID-19
+
+    Parameters
+    ----------
+    type:  str, optional
+            type of data. Deaths ('deahts') and confirmed cases ('confirmed').
+            Default: 'deaths'.
+
+    Returns
+    -------
+    data: tuple(int, list(str), list(int))
+           (population, dates, data)
+
+    '''
+
+    import pandas as pd
+
+    if type == 'deaths':
+        df = pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
+        #df.to_html('covid_19_global_deaths.html')
+
+    else:
+        assert True, 'invalid query type: %r (valid: "deaths"'%(type)
+
+    df = df.drop(['Lat', 'Long'],axis=1)
+    df = df.rename(columns={'Province/State':'state/province','Country/Region':'country/region'})
+
+    import numpy as np
+
+    country_names = list()
+
+    country_names_tmp = list()
+
+    for (i,icountry) in enumerate(df['country/region']):
+        country_names_tmp.append(icountry)
+
+    country_names_set = set(country_names_tmp)
+
+    country_names = list(country_names_set)
+    country_names = sorted(country_names)
+
+    dates = np.array(list(df.columns[2:]))
+
+    cases = np.zeros( (len(df.columns[2:]),len(country_names)), dtype=np.float64)
+
+    for (i,icountry) in enumerate(df['country/region']):
+
+        country_id = country_names.index(icountry)
+
+        cases[:,country_id] += np.array(list(df.loc[i, df.columns[2:]]))
+
+    if distribution:
+
+        for j in range(cases.shape[1]):
+            cases[:,j] = np.round(np.gradient( cases[:,j] ),0)
+
+    return ( country_names, dates, cases )
 #*********************************************************************************
