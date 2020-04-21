@@ -396,7 +396,7 @@ def color_map( num_colors ):
 #*********************************************************************************
 def get_covid_19_us_data( type='deaths' ):
     '''
-    Load COVID-19 pandemic cummulative data from:
+    Load COVID-19 pandemic cumulative data from:
 
      https://github.com/CSSEGISandData/COVID-19.
 
@@ -466,9 +466,9 @@ def get_covid_19_us_data( type='deaths' ):
 
     return ( state_names, population, dates, cases )
 #*********************************************************************************
-def get_covid_19_global_data( type='deaths', distribution=True, cummulative=False ):
+def get_covid_19_global_data( type='deaths', distribution=True, cumulative=False ):
     '''
-    Load COVID-19 pandemic cummulative data from:
+    Load COVID-19 pandemic cumulative data from:
 
         https://github.com/CSSEGISandData/COVID-19
 
@@ -482,8 +482,8 @@ def get_covid_19_global_data( type='deaths', distribution=True, cummulative=Fals
         Distribution of new cases over dates.
         Default: True
 
-    cummulative: bool, optional
-        Cummulative number of cases over dates.
+    cumulative: bool, optional
+        Cumulative number of cases over dates.
         Default: False
 
     Returns
@@ -492,6 +492,9 @@ def get_covid_19_global_data( type='deaths', distribution=True, cummulative=Fals
            (contry_names, dates, cases)
 
     '''
+
+    if cumulative is True:
+        distribution = False
 
     import pandas as pd
 
