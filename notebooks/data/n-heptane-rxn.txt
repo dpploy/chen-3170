@@ -1,0 +1,20 @@
+#
+# N-heptane oxidation mechanism (very reduced)
+#
+# format
+..str:float
+C7H16 + O2 <=> C7H15 + HO2 
+C7H15 + O2 <=> C7H15OO     
+C7H15OO <=> C7H14OOH     
+C7H14OOH + O2 <=> OOC7H14OOH
+OOC7H14OOH <=> OC7H13OOH + OH
+C7H16 + OH <=> C7H15 + H2O
+OCC7H13OOH <=> OC7H13O + OH
+C7H15 + O2 <=> C7H14 + HO2
+OC7H13O + O2 <=> OC7H12O + HO2
+OC7H12O + O2 <=> OC7H10O + H2O2
+OC7H10O + 5 O2 <=> 7 CO + 5 H2O
+C7H14 + 7 O2 <=> 7 CO + 7 H2O
+C8H18 + O2 <=> C8H17 + HO2 
+C8H17 + O2 <=> C8H17OO 
+C8H17OO <=> C8H16OOH
