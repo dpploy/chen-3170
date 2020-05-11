@@ -1,20 +1,45 @@
 #
-# N-heptane oxidation mechanism (very reduced)
+# N-heptane oxidation mechanism 2006 PIMechEng 220, 991
 #
 # format
 ..str:float
-C7H16 + O2 <=> C7H15 + HO2 
-C7H15 + O2 <=> C7H15OO     
-C7H15OO <=> C7H14OOH     
-C7H14OOH + O2 <=> OOC7H14OOH
-OOC7H14OOH <=> OC7H13OOH + OH
-C7H16 + OH <=> C7H15 + H2O
-OCC7H13OOH <=> OC7H13O + OH
-C7H15 + O2 <=> C7H14 + HO2
-OC7H13O + O2 <=> OC7H12O + HO2
-OC7H12O + O2 <=> OC7H10O + H2O2
-OC7H10O + 5 O2 <=> 7 CO + 5 H2O
-C7H14 + 7 O2 <=> 7 CO + 7 H2O
-C8H18 + O2 <=> C8H17 + HO2 
-C8H17 + O2 <=> C8H17OO 
-C8H17OO <=> C8H16OOH
+NC7H16 + OH   <=> C7H15-3 + H2O
+NC7H16 + HO2  <=> C7H15-3 + H2O2
+NC7H16 + O2   <=> C7H15-3 + HO2
+C7H15O2-3     <=> C7H15-3 + O2
+C7H15O2-3     <=> C7H14OOH3-5
+C7H14OOH3-5O2 <=> C7H14OOH3-5 + O2
+C7H14OOH3-5O2 <=> NC7KET35 + OH
+NC7KET35      <=> C2H5CHO + C2H5COCH2 + OH
+C7H14OOH3-5   <=> OH + C2H5CHO + C4H8-1
+C7H15-3       <=> C4H8-1 + NC3H7
+H2O2 + OH     <=> H2O + HO2
+H2O2 + O2     <=> 2 HO2
+2 OH          <=> H2O2
+H + O2        <=> O + OH
+O + H2O       <=> 2 OH
+C2H3 + O2     <=> CH2O + HCO
+CH2O + OH     <=> HCO + H2O
+HCO           <=> H + CO
+HCO + O2      <=> CO + HO2
+CO + OH       <=> CO2 + H
+C2H5 + O2     <=> C2H4 + HO2
+C2H4 + OH     <=> C2H3 + H2O
+C2H5CO        <=> C2H5 + CO
+C2H5CHO + OH  <=> C2H5CO + H2O
+C2H5 + HO2    <=> C2H5O + OH
+C2H5O         <=> CH3 + CH2O
+C2H5COCH2     <=> CH2CO + C2H5
+C4H8-1 + OH   <=> C4H7 + H2O
+C4H7 + O2     <=> C4H6 + HO2
+C4H7 + HO2    <=> C4H7O + OH
+C4H6 + OH     <=> C2H5 + CH2CO
+CH2CO + OH    <=> CH2O + HCO
+C4H7O         <=> CH3CHO + C2H3
+CH3CHO + OH   <=> CH3CO + H2O
+CH3CO         <=> CH3 + CO
+HO2           <=> H + O2
+CH3 + O2      <=> CH3O + O
+CH3O + O2     <=> CH2O + HO2
+CH2O + HO2    <=> HCO + H2O2
+NC3H7         <=> CH3 + C2H4
