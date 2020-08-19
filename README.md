@@ -7,15 +7,15 @@
 ![Website](https://img.shields.io/website/https/github.com/dpploy/chen-3170.svg)
 [![Size](https://img.shields.io/github/repo-size/dpploy/chen-3170.svg?label=size&style=flat)](https://github.com/dpploy/chen-3170)
 
-   + [University of Massachusetts Lowell](https://www.uml.edu/), Spring 2020
+   + [University of Massachusetts Lowell](https://www.uml.edu/), Fall 2020
    + [Dept. of Chemical Engineering](https://www.uml.edu/Engineering/Chemical/) (Nuclear Program)
    + [Prof. Valmor F. de Almeida](https://www.uml.edu/Engineering/Chemical/faculty/de-Almeida-Valmor.aspx) (valmor_dealmeida@uml.edu)
 
 ![](notebooks/images/ls-fourier.png)
 
-The goal of this course is to present to students of chemical engineering an interconnected set of computational methods needed in the core undergraduate chemical engineering curriculum. In particular, methods that assist the students in solving problems in the core areas of chemical reaction equilibria, separations, unit operations, and chemical reactor engineering with applications in nuclear and biochemical engineering.
+The goal of this course is to present to students of (nuclear) chemical engineering an interconnected set of computational methods needed in the core undergraduate chemical engineering curriculum. In particular, methods that assist the students in solving problems in the core areas of chemical reaction equilibria, separations, unit operations, and chemical reactor engineering with applications in nuclear and biochemical engineering.
 
-This three-credit lecture course (and one additional contact hour) over fourteen weeks, consists of Jupyter notebooks used for lectures (numbered 01 to XX) and laboratory work (labwork-01 to XX) for students to practice their skills in computer-aided problem solving (see `notebooks/`). The assumption is that students have very little computer pragramming experience and have not taken any of the core courses in chemical engineering. Therefore this course is a mix of computational methods and computer programming (in python language) aimed at helping students in the remaining portion of their curriculum course work. 
+This three-credit lecture course (and one additional contact hour) over fourteen weeks, consists of Jupyter notebooks used for lectures (numbered 01 to XX) and laboratory work (labwork-01 to XX) for students to practice their skills in computer-aided problem solving (see `notebooks/`). The assumption is that students have little computer pragramming experience and have not taken any of the core courses in chemical engineering. Therefore this course is a mix of computational methods and computer programming (in python language) aimed at helping students in the remaining portion of their curriculum course work. 
 
 Feedback and collaboration to improve this course are welcome through GitHub `pull requests` and `issues` or direct email. 
 
