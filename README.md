@@ -31,7 +31,7 @@ course notebooks. There will be a delay for the Binder cloud server to build a
 Python (Anaconda) programming environment for you. However once it is done, it will 
 start a Jupyter Notebook server on your web browser with all notebooks listed. Upon 
 clicking on individual notebook files, you will access the live course notebooks.
-+ Use the green `download` button above on the right upper side of the page and download a ZIP archive to your local machine. Unzip the archive. Then use your own Jupyter Notebook server to navigate to the directory created by the unzip operation and upload the notebook files. In this case the files will not be updated and you will need to return to the repository for getting new files or updated versions of previously downloaded files.
++ Use the green `Code` button above on the right upper side of the page and either download the repository using GitHub Desktop or download a ZIP archive to your local machine. Unzip the archive. Then use your own Jupyter Notebook server to navigate to the directory created by the unzip or GitHub Desktop operation and upload the notebook files. In the case of a ZIP download the files will not be updated and you will need to return to the repository for getting new files or updated versions of previously downloaded files. If you use GitHub Desktop, the repository will be in sync.
 
 Thanks in advance for inputs to improve this course.\
 Regards,\
