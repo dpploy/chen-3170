@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 #--*-- coding: utf-8 -*-
-# This file is part of the ChEn-3170 Computational Methods in Chemical Engineering
-# course at https://github.com/dpploy/chen-3170
+'''
+ This file is part of the ChEn-3170 Computational Methods in Chemical Engineering
+ course at https://github.com/dpploy/chen-3170
+'''
 def get_triangular_matrix( mode='lower', ndim=None, mtrx=None ):
-    '''
-    Returns a triangular matrix in-place.
+    """Returns a triangular matrix in-place.
 
     If a matrix is given, the function will modify the input, in place, into a
     triangular matrix. The mtrx object will be modified and reflected on the callee side.
@@ -36,7 +37,7 @@ def get_triangular_matrix( mode='lower', ndim=None, mtrx=None ):
        [0.12304746, 0.07522054, 0.        ],
        [0.96357929, 0.69187941, 0.2878785 ]])
 
-    '''
+    """
 
     assert ndim is None or mtrx is None, 'ndim or mtrx must be given; not both.'
     assert not (ndim is None and mtrx is None), 'either ndim or mtrx must be given.'
@@ -61,8 +62,7 @@ def get_triangular_matrix( mode='lower', ndim=None, mtrx=None ):
     return mtrx
 #*********************************************************************************
 def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product'):
-    '''
-    Performs a forward solve with a lower triangular matrix and right side vector.
+    """Performs a forward solve with a lower triangular matrix and right side vector.
 
     Parameters
     ----------
@@ -83,17 +83,29 @@ def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product'):
     Examples
     --------
 
-    '''
+    """
     import numpy as np
 
-    # sanity test
-    assert isinstance(l_mtrx,np.ndarray)      # l_mtrx must be np.ndarray
-    assert l_mtrx.shape[0] == l_mtrx.shape[1],'non-square matrix.' # l_mtrx must be square
-    assert np.all(np.abs(np.diagonal(l_mtrx)) > 0.0),'zero value on diagonal.'
-    rows_ids, cols_ids = np.where(np.abs(l_mtrx) > 0) # get i, j of non zero entries
-    assert np.all(rows_ids >= cols_ids),'non-triangular matrix.' # test i >= j
-    assert b_vec.shape[0] == l_mtrx.shape[0],'incompatible l_mtrx @ b_vec dimensions'  # b_vec must be compatible to l_mtrx
-    assert loop_option == 'use-dot-product' or loop_option == 'use-double-loop'
+    # sanity tests
+
+    # l_mtrx must be np.ndarray
+    assert isinstance(l_mtrx, np.ndarray)
+
+    # l_mtrx must be square
+    assert l_mtrx.shape[0] == l_mtrx.shape[1], 'non-square matrix.'
+
+    assert np.all(np.abs(np.diagonal(l_mtrx)) > 0.0), 'zero value on diagonal.'
+
+    # get i, j of all non zero entries
+    rows_ids, cols_ids = np.where(np.abs(l_mtrx) > 0)
+
+    # non-zero number must be in the lower triangular portion
+    assert np.all(rows_ids >= cols_ids), 'non-triangular matrix.' # test i >= j
+
+    # b_vec must be compatible to l_mtrx
+    assert b_vec.shape[0] == l_mtrx.shape[0], 'incompatible l_mtrx @ b_vec dimensions'
+
+    assert loop_option in ('use-dot-product', 'use-double-loop')
     # end of sanity test
 
     m_rows = l_mtrx.shape[0]
@@ -103,19 +115,19 @@ def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product'):
     if loop_option == 'use-dot-product':
 
         for i in range(m_rows):
-            sum_lx = np.dot( l_mtrx[i,:i], x_vec[:i] )
+            sum_lx = np.dot(l_mtrx[i, :i], x_vec[:i])
             #sum_lx = l_mtrx[i,:i] @ x_vec[:i] # matrix-vec mult. alternative to dot product
             x_vec[i] = b_vec[i] - sum_lx
-            x_vec[i] /= l_mtrx[i,i]
+            x_vec[i] /= l_mtrx[i, i]
 
     elif loop_option == 'use-double-loop':
 
         for i in range(m_rows):
             sum_lx = 0.0
             for j in range(i):
-                sum_lx += l_mtrx[i,j] * x_vec[j]
+                sum_lx += l_mtrx[i, j] * x_vec[j]
             x_vec[i] = b_vec[i] - sum_lx
-            x_vec[i] /= l_mtrx[i,i]
+            x_vec[i] /= l_mtrx[i, i]
 
     else:
         assert False, 'not allowed option: %r'%loop_option
