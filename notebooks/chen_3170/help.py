@@ -117,8 +117,7 @@ def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product'):
         for i in range(m_rows):
             sum_lx = np.dot(l_mtrx[i, :i], x_vec[:i])
             #sum_lx = l_mtrx[i,:i] @ x_vec[:i] # matrix-vec mult. alternative to dot product
-            x_vec[i] = b_vec[i] - sum_lx
-            x_vec[i] /= l_mtrx[i, i]
+            x_vec[i] = (b_vec[i] - sum_lx) / l_mtrx[i, i]
 
     elif loop_option == 'use-double-loop':
 
@@ -126,8 +125,7 @@ def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product'):
             sum_lx = 0.0
             for j in range(i):
                 sum_lx += l_mtrx[i, j] * x_vec[j]
-            x_vec[i] = b_vec[i] - sum_lx
-            x_vec[i] /= l_mtrx[i, i]
+            x_vec[i] = (b_vec[i] - sum_lx) / l_mtrx[i, i]
 
     else:
         assert False, 'not allowed option: %r'%loop_option
