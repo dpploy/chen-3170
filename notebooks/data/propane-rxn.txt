@@ -2,12 +2,12 @@
 # Pyrolysis of propane
 #
 # format
-..str
-C3H8 <-> CH3* + C2H5*
-C2H5* <-> C2H4 + H*
-C2H5* + C3H8 <-> C2H6 + C3H7*
-CH3* + C3H8 <-> CH4 + C3H7*
-C3H7* <-> C2H4 + CH3*
-C3H7* <-> C3H6 + H*
-C3H8 + H* <-> H2 + C3H7*
-CH3* + C3H7* <-> C3H6 + CH4
+..str:float
+C3H8         <-> CH3* + C2H5* : K_x = 3.3e+01
+C3H8 + H*    <-> H2 + C3H7*   : K_x = 2.3e+01
+C3H7*        <-> C3H6 + H*    : K_x = 1.3e+00
+C2H5*        <-> C2H4 + H*    : K_x = 1.1e-01
+C3H7*        <-> C2H4 + CH3*  : K_x = 3.0e-01
+C2H5* + C3H8 <-> C2H6 + C3H7* : K_x = 1.3e+01
+CH3* + C3H8  <-> CH4 + C3H7*  : K_x = 8.1e+00
+CH3* + C3H7* <-> C3H6 + CH4   : K_x = 8.7e-01
