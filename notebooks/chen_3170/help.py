@@ -350,21 +350,19 @@ def plot_arrhenius_experimental_data( temp, k_cte ):
 
     return
 #*********************************************************************************
-def color_map( num_colors ):
-    '''
-    Nice colormap for plotting.
+def color_map(num_colors):
+    """Nice colormap for plotting.
 
     Parameters
     ----------
-    num_colors: int, required
+    num_colors: int
         Number of colors.
 
     Returns
     -------
     color_map: list(tuple(R,G,B,A))
         List with colors interpolated from internal list of primary colors.
-
-    '''
+    """
 
     assert num_colors >= 1
 
