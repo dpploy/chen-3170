@@ -4,6 +4,9 @@
  This file is part of the ChEn-3170 Computational Methods in Chemical Engineering
  course at https://github.com/dpploy/chen-3170
 '''
+
+import numpy as np
+
 def get_triangular_matrix( mode='lower', ndim=None, mtrx=None ):
     """Returns a triangular matrix in-place.
 
@@ -43,8 +46,10 @@ def get_triangular_matrix( mode='lower', ndim=None, mtrx=None ):
     assert not (ndim is None and mtrx is None), 'either ndim or mtrx must be given.'
     assert mode =='lower' or mode =='upper', 'invalid mode %r.'%mode
 
+    if ndim is not None:
+        assert isinstance(ndim, int)
+
     if mtrx is None:
-        import numpy as np
         mtrx = np.random.random((ndim,ndim))
     else:
         assert mtrx.shape[0] == mtrx.shape[1], 'matrix not square.'
