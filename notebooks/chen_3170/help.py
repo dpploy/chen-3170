@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 #--*-- coding: utf-8 -*-
-'''
- This file is part of the ChEn-3170 Computational Methods in Chemical Engineering
- course at https://github.com/dpploy/chen-3170
-'''
 
 import numpy as np
 
