@@ -7,8 +7,8 @@ def get_triangular_matrix( mode='lower', ndim=None, mtrx=None ):
     """Returns a triangular matrix in-place.
 
     If a matrix is given, the function will modify the input, in place, into a
-    triangular matrix. The mtrx object will be modified and reflected on the callee side.
-    Otherwise, the function generates a random triangular matrix.
+    triangular matrix. The mtrx object will be modified and reflected on the callee
+    side. Otherwise, the function generates a random triangular matrix.
 
     Parameters
     ----------
