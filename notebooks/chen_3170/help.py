@@ -30,7 +30,8 @@ def get_triangular_matrix( mode='lower', ndim=None, mtrx=None ):
     Examples
     --------
 
-    >>> a_mtrx = ce.get_triangular_matrx('lower',3)
+    >>> from chen_3170.help import get_triangular_matrix
+    >>> a_mtrx = get_triangular_matrx('lower',3)
     >>> a_mtrx
     array([[0.38819556, 0.    , 0.        ],
        [0.12304746, 0.07522054, 0.        ],
