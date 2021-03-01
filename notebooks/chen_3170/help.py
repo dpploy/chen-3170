@@ -167,9 +167,9 @@ def plot_matrix(mtrx, color_map='bw', title=None):
 
     plt.figure(1)
     if color_map == 'bw':
-        plt.imshow(np.abs(mtrx),cmap='gray')
+        plt.imshow(np.abs(mtrx), cmap='gray')
     else:
-        plt.imshow(mtrx,cmap=color_map)
+        plt.imshow(mtrx, cmap=color_map)
     if title is not None:
         plt.title(title,fontsize=14)
     print('matrix shape =',mtrx.shape)  # inspect the array shape
