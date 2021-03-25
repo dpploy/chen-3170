@@ -7,3 +7,4 @@ scipy
 plotly
 ipywidgets
 jupyter_contrib_nbextensions
+jupyterthemes
