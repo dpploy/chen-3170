@@ -340,7 +340,7 @@ def plot_arrhenius_experimental_data( temp, k_cte ):
     import matplotlib.pyplot as plt
     plt.style.use('dark_background')
 
-    plt.figure(1, figsize=(7, 7))
+    plt.figure(1, figsize=(12, 7))
 
     plt.plot(temp, k_cte,'r*',label='experimental')
     plt.xlabel(r'$T$ [K]',fontsize=14)
