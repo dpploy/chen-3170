@@ -208,7 +208,7 @@ def print_reactions(reactions):
 
     return
 #*********************************************************************************
-def print_reaction_sub_mechanisms( sub_mechanisms, mode=None, print_n_sub_mech=None ):
+def print_reaction_sub_mechanisms(sub_mechanisms, mode=None, print_n_sub_mech=None):
     '''
     Nice printout of a scored reaction sub-mechanism list
 
@@ -218,7 +218,7 @@ def print_reaction_sub_mechanisms( sub_mechanisms, mode=None, print_n_sub_mech=N
           Sorted reaction mechanims in the form of a list.
 
     mode: string, optional
-          Printing mode: all, top, None. Default: all
+          Printing mode: all, top, None.
 
     Returns
     -------
@@ -254,7 +254,7 @@ def print_reaction_sub_mechanisms( sub_mechanisms, mode=None, print_n_sub_mech=N
     for rm in sub_mechanisms:
         if sub_mechanisms.index(rm) > print_n_sub_mech-1: continue
         print('Reaction Sub Mechanism: %s (score %4.2f)'%(sub_mechanisms.index(rm),rm[3]))
-        for (i,r) in zip( rm[0], rm[1] ):
+        for (i,r) in zip(rm[0], rm[1]):
             print('r%s'%i,r)
 
     return
