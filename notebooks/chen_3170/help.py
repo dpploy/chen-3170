@@ -134,19 +134,20 @@ def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product'):
 
     return x_vec
 #*********************************************************************************
-def plot_matrix(mtrx, color_map='bw', title=None):
+def plot_matrix(mtrx, color_map='bw', title=None, style=None):
     '''
     Plot matrix as an image.
 
     Parameters
     ----------
-    mtrx: numpy.ndarray, required
-          Matrix data.
-    color_map: str, optional
-               Color map for image: 'bw' black and white
+    mtrx: numpy.ndarray
+        Matrix data.
+    color_map: str
+        Color map for image: 'bw' black and white
     title: str, optional
-           Title for plot.
-
+        Title for plot.
+    style: str
+        Matplotlib style: 'dark', 'default', 'gray'
     Returns
     -------
     None:
@@ -156,12 +157,19 @@ def plot_matrix(mtrx, color_map='bw', title=None):
 
     '''
 
-    # sanity check
-    import numpy as np
-    assert isinstance(mtrx,np.ndarray)
-    import numpy as np
+    assert isinstance(mtrx,np.ndarray) # sanity check
+
     from matplotlib import pyplot as plt # import the pyplot function of the matplotlib package
-    # end of sanity check
+
+    # See matplotlib options: help(plt.style.available())
+    if style == 'default' or style is None:
+        plt.style.use('default')
+    elif style == 'dark':
+        plt.style.use('dark_background')
+    elif style == 'gray':
+        plt.style.use('seaborn-dark')
+    else:
+        assert False
 
     plt.rcParams['figure.figsize'] = [20, 4] # extend the figure size on screen output
 
@@ -316,7 +324,7 @@ def read_arrhenius_experimental_data(filename):
 
     return (r_cte, r_cte_units, n_pts, temp, k_cte)
 #*********************************************************************************
-def plot_arrhenius_experimental_data( temp, k_cte ):
+def plot_arrhenius_experimental_data(temp, k_cte, style=None):
 
     '''
     Plot T versus k data for fitting an Arrhenius rate constant expression.
@@ -338,7 +346,16 @@ def plot_arrhenius_experimental_data( temp, k_cte ):
     '''
 
     import matplotlib.pyplot as plt
-    plt.style.use('dark_background')
+
+    # See matplotlib options: help(plt.style.available())
+    if style == 'default' or style is None:
+        plt.style.use('default')
+    elif style == 'dark':
+        plt.style.use('dark_background')
+    elif style == 'gray':
+        plt.style.use('seaborn-dark')
+    else:
+        assert False
 
     plt.figure(1, figsize=(12, 7))
 
