@@ -63,19 +63,20 @@ def get_triangular_matrix( mode='lower', ndim=None, mtrx=None ):
 
     return mtrx
 #*********************************************************************************
-def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product'):
+def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product', zero_tol=1e-12):
     """Performs a forward solve with a lower triangular matrix and right side vector.
 
     Parameters
     ----------
-    l_mtrx: numpy.ndarray, required
-            Lower triangular matrix.
-    b_vec:  numpy.ndarray, required
-            Right-side vector.
-    loop_option: string, optional
-            This is an internal option to demonstrate the usage of an explicit
-            double loop or an implicit loop using a dot product.
-            Default: 'use-dot-product'
+    l_mtrx: numpy.ndarray
+       Lower triangular matrix.
+    b_vec:  numpy.ndarray
+       Right-side vector.
+    loop_option: string
+       This is an internal option to demonstrate the usage of an explicit
+       double loop or an implicit loop using a dot product.
+    zero_tol: float
+       Tolerance for non-zero values in the upper triangular portion.
 
     Returns
     -------
@@ -99,10 +100,11 @@ def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product'):
     assert np.all(np.abs(np.diagonal(l_mtrx)) > 0.0), 'zero value on diagonal.'
 
     # get i, j of all non zero entries
-    rows_ids, cols_ids = np.where(np.abs(l_mtrx) > 0)
+    rows_ids, cols_ids = np.where(np.abs(l_mtrx) > zero_tol)
 
     # non-zero number must be in the lower triangular portion
-    assert np.all(rows_ids >= cols_ids), 'non-triangular matrix.' # test i >= j
+    assert np.all(rows_ids >= cols_ids), \
+            'non-triangular matrix. l_mtrx =%r\n'%l_mtrx # test i >= j
 
     # b_vec must be compatible to l_mtrx
     assert b_vec.shape[0] == l_mtrx.shape[0], 'incompatible l_mtrx @ b_vec dimensions'
