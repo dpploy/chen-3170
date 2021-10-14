@@ -1,13 +1,11 @@
 #
 # Ethyl-nitrite pyrolysis
 #`
-# format
-..str:float
 C2H5ONO     <=> C2H5O   + NO   : K_x = 5.02e+00
 C2H5O       <=> CH3     + CH2O : K_x = 3.23e+00
 C2H5O + NO  <=> CH3CHO  + HNO  : K_x = 2.12e+00
 C2H5O + HNO <=> C2H5OH  + NO   : K_x = 3.65e+00
 2 NOH       <=> N2O     + H2O  : K_x = 1.45e-01
 CH3 + NO    <=> CH3NO          : K_x = 1.67e+00
-CH3NO       <=> CH2=NOH        : K_x = 1.09e-00
-CH2=NOH     <=> HCN     + H2O  : K_x = 1.14e-01
+CH3NO       <=> CH2NOH         : K_x = 1.09e-00
+CH2NOH      <=> HCN     + H2O  : K_x = 1.14e-01

@@ -1,8 +1,6 @@
 #
 # Ethyl nitrate pyrolysis
 #
-# format
-..str:float
 C2H5ONO2     <=> C2H5O + NO2       : K_x = 1.80e+00
 C2H5O        <=> CH3 + CH2O        : K_x = 9.50e+00
 CH3 + NO2    <=> CH3O + NO         : K_x = 2.31e+01
