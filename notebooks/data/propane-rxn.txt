@@ -1,8 +1,6 @@
 #
 # Pyrolysis of propane
 #
-# format
-..str:float
 C3H8         <-> CH3* + C2H5* : K_x = 3.3e+01
 C3H8 + H*    <-> H2 + C3H7*   : K_x = 2.3e+01
 C3H7*        <-> C3H6 + H*    : K_x = 1.3e+00

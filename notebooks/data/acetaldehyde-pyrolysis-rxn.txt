@@ -1,9 +1,8 @@
 #
 # Pyrolysis of acetaldehyde sensitized by iodine
 #
-..str
-I2 <=> 2 I 
-I + CH3CHO <-> HI + CH3CO
-CH3CO <-> CH3 + CO
-CH3 + I2 <=> CH3I + I
-CH3 + HI <-> CH4 + I
+I2         <=> 2 I 
+I + CH3CHO <=> HI + CH3CO
+CH3CO      <=> CH3 + CO
+CH3 + I2   <=> CH3I + I
+CH3 + HI   <=> CH4 + I
