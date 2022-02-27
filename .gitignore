@@ -10,10 +10,10 @@ vault*
 tbp*
 *solution*
 *makeup*
-#*exam*
+*exam*
 *.svg
 *.prb
-mid-term*
+*mid-term*
 toolkit.py
 *.swp
 # Byte-compiled / optimized / DLL files
