@@ -1,5 +1,5 @@
 #
-# Production of ethylene and acetylene from ethane
+# Production of ethylene and acetylene from dehydrogenation of ethane
 #
 ..str:float:str
 C2H6 <=> C2H4 +   H2  : DeltaGstd = 24142 : DeltaHstd(T) = 31094+6.101*T-1.46e-3*T**2-2.222e-6*T**3+9.843e-10*T**4
