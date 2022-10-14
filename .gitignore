@@ -18,6 +18,7 @@ toolkit.py
 *.swp
 readme-md-pdf.txt
 00-syllabus.md
+00-syllabus.pdf
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
