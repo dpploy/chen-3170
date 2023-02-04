@@ -1,6 +1,6 @@
 #
 # Ethyl-nitrite pyrolysis
-#`
+#
 C2H5ONO     <=> C2H5O   + NO   : K_x = 5.02e+00
 C2H5O       <=> CH3     + CH2O : K_x = 3.23e+00
 C2H5O + NO  <=> CH3CHO  + HNO  : K_x = 2.12e+00

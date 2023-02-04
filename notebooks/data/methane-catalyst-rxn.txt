@@ -1,7 +1,6 @@
 #
 # Methane oxidation with catalyst
 #
-..str
 CO(g)  + S     <=> CO(s)
 CO(s)  + S     <=> C(s)   + O(s)
 O(s)   + H2(g) <=> H2O(g) + S
