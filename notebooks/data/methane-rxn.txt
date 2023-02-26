@@ -1,10 +1,6 @@
 #
 # Methane oxidation
 #
-# format
-..str
-#
-# data
 CO  + 0.5 O2 <=> CO2
 H2  + 0.5 O2 <=> H2O      
 CH4 + 2 O2   <=> CO2 + 2 H2O
