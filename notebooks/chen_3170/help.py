@@ -136,7 +136,7 @@ def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product', zero_tol=1e-12):
 
     return x_vec
 #*********************************************************************************
-def plot_matrix(mtrx, color_map='bw', title=None, style=None):
+def plot_matrix(mtrx, color_map='bw', title=None, style=None, xlabels=None, ylabels=None):
     '''
     Plot matrix as an image.
 
@@ -145,11 +145,15 @@ def plot_matrix(mtrx, color_map='bw', title=None, style=None):
     mtrx: numpy.ndarray
         Matrix data.
     color_map: str
-        Color map for image: 'bw' black and white
+        Color map for image: 'bw' black and white, use any other valid colormap.
     title: str, optional
         Title for plot.
     style: str
         Matplotlib style: 'dark', 'default', 'gray'
+    xlabels: list(str)
+        Labels for the x axis.
+    ylables: list(str)
+        Labels for the y axis.
     Returns
     -------
     None:
@@ -159,7 +163,7 @@ def plot_matrix(mtrx, color_map='bw', title=None, style=None):
 
     '''
 
-    assert isinstance(mtrx,np.ndarray) # sanity check
+    assert isinstance(mtrx, np.ndarray) # sanity check
 
     from matplotlib import pyplot as plt # import the pyplot function of the matplotlib package
 
@@ -183,6 +187,14 @@ def plot_matrix(mtrx, color_map='bw', title=None, style=None):
     if title is not None:
         plt.title(title,fontsize=14)
     print('matrix shape =',mtrx.shape)  # inspect the array shape
+    if xlabels is not None:
+        assert isinstance(xlabels, list)
+        assert mtrx.shape[1] == len(xlabels)
+        plt.xticks( range(mtrx.shape[1]), xlabels, rotation=60, fontsize=10 )
+    if ylabels is not None:
+        assert isinstance(ylabels, list)
+        assert mtrx.shape[0] == len(ylabels)
+        plt.yticks( range(mtrx.shape[0]), ylabels, rotation=0, fontsize=10 )
 
     plt.show()
 
