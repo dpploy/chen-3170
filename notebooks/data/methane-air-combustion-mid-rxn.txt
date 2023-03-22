@@ -1,0 +1,25 @@
+#
+# Methane combustion in air (chatgpt)
+#
+#Simplified combustion reaction mechanism for methane in air, extended to 10 reactions:
+#
+#    Initiation: 
+CH4 + OH* -> CH3* + H2O
+#
+#  Propagation:
+CH3* + O2 -> CH3O2*
+CH3O2* + NO -> CH3O* + NO2
+CH3O* + O2 -> CH2O + HO2*
+HO2* + NO -> OH* + NO2
+#
+# Termination:
+#CH3O2* + CH3O2* -> CH3O + O2 + CH3O2H
+2 CH3O2* -> CH3O + O2 + CH3O2H
+CH3O* + NO2 -> CH3ONO
+CH3O* + HO2* -> CH2O + H2O + O2
+2 OH* -> H2O2
+CH3O* + CH3* -> C2H5*
+#
+#The above mechanism is a simplified version of the full combustion mechanism, which involves numerous intermediate species and #reactions. However, it captures the main steps involved in the combustion of methane in air.
+#
+#Note that the combustion of methane is an exothermic reaction, which means it releases energy in the form of heat. This reaction #is used in many industrial and household applications, including cooking, heating, and electricity generation. However, it also #contributes to the emission of greenhouse gases, which have a significant impact on global climate change.
