@@ -10,23 +10,22 @@ CH3* + O2 -> CH3O2*
 CH3O2* + NO -> CH3O* + NO2
 CH3O* + O2 -> CH2O + HO2*
 HO2* + NO -> OH* + NO2
-CH3O* + NO2 -> CH3ONO
+CH3O* + NO2 -> CH3ONO2
 CH2O + OH* -> HCO + H2O
 HCO + O2 -> HO2* + CO
-HO2* + NO -> OH* + NO2
-CH3O* + HO2* -> CH2O + H2O + O2
-CH3O* + CH3* -> C2H5*
+CH3O* + HO2* -> CH2O + H2O + O*
+CH3O* + CH3* -> C2H5* + OH
 C2H5* + O2 -> C2H5O2*
 C2H5O2* + NO -> C2H5O* + NO2
 C2H5O* + O2 -> CH3CHO + HO2*
 CH3CHO + OH* -> CH3CO* + H2O
-CH3CO* + O2 -> HO2* + CO2 + CH3O2*
+CH3CO* + O2 -> CO + CH3O2*
 HO2* + CO -> OH* + CO2
 OH* + NO2 -> HNO3
-C2H5O* + C2H5* -> C4H10 + O2
+C2H5O* + C2H5* -> C4H5H5 + O*
 CH3O* + H* -> CH3OH
 #
 # Termination:
-CH3O2* + CH3O2* -> CH3O + O2 + CH3O2H
-2OH* -> H2O2
-CH3O* + C2H5O* -> CH3OCH2CH3 + O2
+2 CH3O2* -> 2 CH3O + O2
+2 OH* -> H2O2
+CH3O* + C2H5O* -> CH3OCH2CH3 + O*

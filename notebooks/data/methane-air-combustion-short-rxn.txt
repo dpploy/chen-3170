@@ -12,8 +12,8 @@ OH* + CH4 -> CH3* + H2O
 #    Propagation: In the propagation step, the methyl radical reacts with an oxygen molecule (O2) to form a peroxy #radical(CH3O2·). The peroxy radical then reacts with another methane molecule to form a methoxy radical (CH3O·) and a hydroxyl #radical. The methoxy radical can then react with another oxygen molecule to form a second peroxy radical, which can react with #another methane molecule to continue the propagation cycle.
 #    
 CH3* + O2 -> CH3O2*
-CH3O2* + CH4 -> CH3O* + CH3O2H
-CH3O2* + O2 -> CH3O2H + O*
+CH3O2* + CH4 -> CH3O* + CH3OH
+CH3O2* + O2 -> CH3O2 + 2 O*
 #
 #    Termination: The reaction terminates when two radicals react with each other to form a stable molecule. In the case of #methane combustion, the primary termination reactions are the recombination of hydroxyl radicals to form water vapor and the #recombination of methyl radicals to form ethane (C2H6).
 #

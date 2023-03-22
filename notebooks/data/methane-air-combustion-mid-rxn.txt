@@ -14,11 +14,11 @@ HO2* + NO -> OH* + NO2
 #
 # Termination:
 #CH3O2* + CH3O2* -> CH3O + O2 + CH3O2H
-2 CH3O2* -> CH3O + O2 + CH3O2H
-CH3O* + NO2 -> CH3ONO
-CH3O* + HO2* -> CH2O + H2O + O2
+2 CH3O2* -> 2 CH3O + O2
+CH3O* + NO -> CH3ONO
+CH3O* + HO2* -> CH2O + H2O + O*
 2 OH* -> H2O2
-CH3O* + CH3* -> C2H5*
+CH3O* + CH3* -> C2H6* + O*
 #
 #The above mechanism is a simplified version of the full combustion mechanism, which involves numerous intermediate species and #reactions. However, it captures the main steps involved in the combustion of methane in air.
 #
