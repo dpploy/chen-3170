@@ -136,7 +136,7 @@ def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product', zero_tol=1e-12):
 
     return x_vec
 #*********************************************************************************
-def plot_matrix(mtrx, color_map='bw', title=None, style=None, xlabels=None, ylabels=None):
+def plot_matrix(mtrx, color_map='bw', title=None, style=None, yaxis=True, xaxis=True, xlabels=None, ylabels=None):
     '''
     Plot matrix as an image.
 
@@ -187,14 +187,25 @@ def plot_matrix(mtrx, color_map='bw', title=None, style=None, xlabels=None, ylab
     if title is not None:
         plt.title(title,fontsize=14)
     print('matrix shape =',mtrx.shape)  # inspect the array shape
-    if xlabels is not None:
-        assert isinstance(xlabels, list)
-        assert mtrx.shape[1] == len(xlabels)
-        plt.xticks( range(mtrx.shape[1]), xlabels, rotation=60, fontsize=10 )
-    if ylabels is not None:
-        assert isinstance(ylabels, list)
-        assert mtrx.shape[0] == len(ylabels)
-        plt.yticks( range(mtrx.shape[0]), ylabels, rotation=0, fontsize=10 )
+
+    assert yaxis in [True, False]
+    if yaxis:
+        if ylabels is not None:
+            assert isinstance(ylabels, list)
+            assert mtrx.shape[0] == len(ylabels)
+            plt.yticks( range(mtrx.shape[0]), ylabels, rotation=0, fontsize=10 )
+    else:
+        plt.yticks([])
+
+    assert xaxis in [True, False]
+    if xaxis:
+        if xlabels is not None:
+            assert isinstance(xlabels, list)
+            assert mtrx.shape[1] == len(xlabels)
+            plt.xticks( range(mtrx.shape[1]), xlabels, rotation=60, fontsize=10 )
+    else:
+        plt.xticks([])
+
 
     plt.show()
 
