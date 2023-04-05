@@ -136,7 +136,8 @@ def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product', zero_tol=1e-12):
 
     return x_vec
 #*********************************************************************************
-def plot_matrix(mtrx, color_map='bw', title=None, style=None, yaxis=True, xaxis=True, xlabels=None, ylabels=None):
+def plot_matrix(mtrx, color_map='bw', title=None, style=None, yaxis=True, xaxis=True, xlabels=None, 
+                ylabels=None, xrotation=60):
     '''
     Plot matrix as an image.
 
@@ -163,7 +164,8 @@ def plot_matrix(mtrx, color_map='bw', title=None, style=None, yaxis=True, xaxis=
 
     '''
 
-    assert isinstance(mtrx, np.ndarray) # sanity check
+    assert isinstance(mtrx, np.ndarray)
+    assert isinstance(xrotation, int)
 
     from matplotlib import pyplot as plt # import the pyplot function of the matplotlib package
 
@@ -202,7 +204,7 @@ def plot_matrix(mtrx, color_map='bw', title=None, style=None, yaxis=True, xaxis=
         if xlabels is not None:
             assert isinstance(xlabels, list)
             assert mtrx.shape[1] == len(xlabels)
-            plt.xticks( range(mtrx.shape[1]), xlabels, rotation=60, fontsize=10 )
+            plt.xticks( range(mtrx.shape[1]), xlabels, rotation=xrotation, fontsize=10 )
     else:
         plt.xticks([])
 
