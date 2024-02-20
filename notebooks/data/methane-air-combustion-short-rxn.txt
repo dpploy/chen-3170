@@ -1,29 +1,41 @@
 #
 # Methane combustion in air (chatgpt)
 #
-#One interesting chemical reaction mechanism involving methane is the combustion of methane in air. The combustion of methane is #an exothermic reaction that releases heat and forms carbon dioxide and water vapor as products.
+# One interesting chemical reaction mechanism involving methane is the combustion of methane in air. 
+# The combustion of methane is an exothermic reaction that releases heat and forms carbon dioxide and water 
+# vapor as products.
 #
-#The reaction mechanism can be broken down into several steps:
+# The reaction mechanism can be broken down into several steps:
 #
-#    Initiation: The reaction begins with the initiation step, which involves the formation of radicals. In the case of methane #combustion, the radical initiator is often a hydroxyl radical (OH·), which can be formed through the photodissociation of ozone #(O3) or the reaction of nitrogen dioxide (NO2) with water vapor (H2O). The hydroxyl radical then reacts with methane (CH4) to I #form a methyl radical (CH3·) and water vapor (H2O).
+# Initiation: The reaction begins with the initiation step, which involves the formation of radicals. 
+# In the case of methane #combustion, the radical initiator is often a hydroxyl radical (OH·), which can be 
+# formed through the photodissociation of ozone #(O3) or the reaction of nitrogen dioxide (NO2) with water 
+# vapor (H2O). The hydroxyl radical then reacts with methane (CH4) to I #form a methyl radical (CH3·) and 
+# water vapor (H2O).
 #
 OH* + CH4 -> CH3* + H2O
 #
-#    Propagation: In the propagation step, the methyl radical reacts with an oxygen molecule (O2) to form a peroxy #radical(CH3O2·). The peroxy radical then reacts with another methane molecule to form a methoxy radical (CH3O·) and a hydroxyl #radical. The methoxy radical can then react with another oxygen molecule to form a second peroxy radical, which can react with #another methane molecule to continue the propagation cycle.
+# Propagation: In the propagation step, the methyl radical reacts with an oxygen molecule (O2) to form a 
+# peroxy #radical(CH3O2·). The peroxy radical then reacts with another methane molecule to form a methoxy 
+# radical (CH3O·) and a hydroxyl #radical. The methoxy radical can then react with another oxygen molecule 
+# to form a second peroxy radical, which can react with #another methane molecule to continue the 
+# propagation cycle.
 #    
 CH3* + O2 -> CH3O2*
 CH3O2* + CH4 -> CH3O* + CH3OH
 CH3O2* + O2 -> CH3O2 + 2 O*
 #
-#    Termination: The reaction terminates when two radicals react with each other to form a stable molecule. In the case of #methane combustion, the primary termination reactions are the recombination of hydroxyl radicals to form water vapor and the #recombination of methyl radicals to form ethane (C2H6).
+# Termination: The reaction terminates when two radicals react with each other to form a stable molecule. 
+# In the case of #methane combustion, the primary termination reactions are the recombination of hydroxyl 
+# radicals to form water vapor and the #recombination of methyl radicals to form ethane (C2H6).
 #
 #OH* + OH* -> H2O + O*
 2 OH* -> H2O + O*
 #CH3* + CH3* -> C2H6
 2 CH3* -> C2H6
 #
-#Overall, the combustion of methane in air can be summarized by the following equation:
+# Overall, the combustion of methane in air can be summarized by the following equation:
 #
 #CH4 + 2O2 → CO2 + 2H2O
 #
-#This reaction is a crucial process in the global carbon cycle and plays a significant role in climate change.
+# This reaction is a crucial process in the global carbon cycle and plays a significant role in climate change.

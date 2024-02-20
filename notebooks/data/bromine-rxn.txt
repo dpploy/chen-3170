@@ -1,10 +1,6 @@
 #
 # Bromine hydrogenation
 #
-# format
-..str:
-#
-# data
 H2 + Br2 <=> 2 HBr
 Br2 <=> 2 Br      
 Br + H2 <=> HBr + H
