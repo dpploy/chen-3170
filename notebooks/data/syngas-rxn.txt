@@ -1,0 +1,22 @@
+# Corrected ChatGPT
+#
+#   Pyrolysis (Destruction of Feedstock):
+C(s) -> C(g)
+#   Primary Oxidation (Partial Combustion):
+2 C(g) + O2 -> 2 CO
+#   Water-Gas Shift Reaction:
+CO + H2O <-> CO2 + H2
+#   Secondary Oxidation (Complete Combustion):
+CO + 0.5 O2 -> CO2
+#   Methanation:
+CO + 3 H2 -> CH4 + H2O
+#   Steam Reforming:
+CH4 + H2O -> CO + 3 H2
+#   Boudouard Reaction (Carbon Gasification):
+C(g) + CO2 -> 2 CO
+#   Water Gas Reaction (Direct Reduction of Steam):
+C(g) + H2O -> CO + H2
+#   Shift Methane Reaction (Methane Decomposition):
+CH4 <=> C(g) + 2 H2
+#   Reverse Water-Gas Shift Reaction:
+CO2 + H2 <=> CO + H2O

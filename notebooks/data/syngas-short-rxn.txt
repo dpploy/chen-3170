@@ -1,0 +1,12 @@
+# Corrected ChatGPT
+#
+#   Pyrolysis (Destruction of Feedstock):
+C(s) -> C(g)
+#   Primary Oxidation (Partial Combustion):
+2 C(g) + O2 -> 2 CO
+#   Secondary Oxidation (Complete Combustion):
+CO + 0.5 O2 -> CO2
+#   Methanation:
+C(g) + H2O -> CO + H2
+#   Shift Methane Reaction (Methane Decomposition):
+CH4 <=> C(g) + 2 H2

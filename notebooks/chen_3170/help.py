@@ -136,8 +136,9 @@ def forward_solve(l_mtrx, b_vec, loop_option='use-dot-product', zero_tol=1e-12):
 
     return x_vec
 #*********************************************************************************
-def plot_matrix(mtrx, color_map='bw', title=None, style=None, yaxis=True, xaxis=True, xlabels=None, 
-                ylabels=None, xrotation=60):
+def plot_matrix(mtrx, color_map='bw', title=None, style=None,
+                yaxis=True, xaxis=True,
+                xlabels=None, ylabels=None, xrotation=60, figure_size=(20,4)):
     '''
     Plot matrix as an image.
 
@@ -155,6 +156,8 @@ def plot_matrix(mtrx, color_map='bw', title=None, style=None, yaxis=True, xaxis=
         Labels for the x axis.
     ylables: list(str)
         Labels for the y axis.
+    xrotation: int
+        Rotate x labels.
     Returns
     -------
     None:
@@ -164,8 +167,15 @@ def plot_matrix(mtrx, color_map='bw', title=None, style=None, yaxis=True, xaxis=
 
     '''
 
+    assert isinstance(xaxis, bool)
+    assert isinstance(yaxis, bool)
     assert isinstance(mtrx, np.ndarray)
     assert isinstance(xrotation, int)
+
+    if xlabels is not None:
+        xaxis = True
+    if ylabels is not None:
+        yaxis = True
 
     from matplotlib import pyplot as plt # import the pyplot function of the matplotlib package
 
@@ -179,7 +189,7 @@ def plot_matrix(mtrx, color_map='bw', title=None, style=None, yaxis=True, xaxis=
     else:
         assert False
 
-    plt.rcParams['figure.figsize'] = [20, 4] # extend the figure size on screen output
+    plt.rcParams['figure.figsize'] = list(figure_size) # extend the figure size on screen output
 
     plt.figure(1)
     if color_map == 'bw':
@@ -204,7 +214,7 @@ def plot_matrix(mtrx, color_map='bw', title=None, style=None, yaxis=True, xaxis=
         if xlabels is not None:
             assert isinstance(xlabels, list)
             assert mtrx.shape[1] == len(xlabels)
-            plt.xticks( range(mtrx.shape[1]), xlabels, rotation=xrotation, fontsize=10 )
+            plt.xticks(range(mtrx.shape[1]), xlabels, rotation=xrotation, fontsize=10)
     else:
         plt.xticks([])
 

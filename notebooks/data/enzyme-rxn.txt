@@ -1,8 +1,8 @@
 #
 # Enzyme reactions
 #
-# format
-..str
+# NB: & used for complexation
+#
 E + S <=> E*S
 E + I <=> I*E
 I + E*S <=> I*E*S

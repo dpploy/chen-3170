@@ -1,5 +1,5 @@
 #
-# Methane combustion in air (chatgpt)
+# Methane combustion in air (corrected chatgpt)
 #
 # One interesting chemical reaction mechanism involving methane is the combustion of methane in air. 
 # The combustion of methane is an exothermic reaction that releases heat and forms carbon dioxide and water 

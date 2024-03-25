@@ -1,5 +1,5 @@
 #
-# Methane combustion in air (chatgpt)
+# Methane combustion in air (corrected chatgpt)
 #
 #Simplified combustion reaction mechanism for methane in air, extended to 10 reactions:
 #
