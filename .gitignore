@@ -12,6 +12,7 @@ xx*
 vault*
 tbp*
 *solution*
+*tmp*
 *makeup*
 *exam*
 *.svg
@@ -22,7 +23,6 @@ toolkit.py
 readme-md-pdf.txt
 00-syllabus.md
 00-syllabus.pdf
-labwork-05*
 labwork-06*
 labwork-07*
 # Byte-compiled / optimized / DLL files
