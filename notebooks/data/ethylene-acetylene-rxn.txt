@@ -1,8 +1,6 @@
 #
 # Production of ethylene and acetylene from dehydrogenation of ethane
 #
-# format
-..str:float
-C2H6 <=> C2H4 +   H2  : K_x = 1.134e+02
-C2H6 <=> C2H2 + 2 H2  : K_x = 3.729e+02
-C2H4 <=> C2H2 +   H2  : K_x = 3.276e+00
+C2H6 <=> C2H4 +   H2 : K_x = 1.134e+02
+C2H6 <=> C2H2 + 2 H2 : K_x = 3.729e+01
+C2H4 <=> C2H2 +   H2 : K_x = 3.276e-01
