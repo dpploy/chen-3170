@@ -1,10 +1,10 @@
 #
 # Enzyme reactions
-#
 # NB: * used for complexation
+# NB: build K_x by testing one reaction at a time.
 #
-E + S   <=> E*S       : K_x = 1.1e+2
-E + I   <=> I*E       : K_x = 1.8e+2
-I + E*S <=> I*E*S     : K_x = 1.5e-1
-E*S     <=> P     + E : K_x = 1.0e-1
-S + I*E <=> I*E*S     : K_x = 1.1e-2
+E + S   <=> E*S       : K_x = 2.1e+2
+#E + I   <=> I*E       : K_x = 1.8e+2
+#I + E*S <=> I*E*S     : K_x = 7.5e-1
+#E*S     <=> P     + E : K_x = 3.0e-2
+#S + I*E <=> I*E*S     : K_x = 6.1e-2
