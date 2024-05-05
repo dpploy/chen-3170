@@ -1,8 +1,6 @@
 #
 # Water-gas shift reaction
 #
-# format
-..str:float
-H2O + CO <-> CO2 + H2 : K_x = 113.13
-H2O + H  <-> H2  + OH : K_x = 22.182353
-OH  + CO <-> CO2 + H  : K_x = 5.1
+H2O + CO <-> CO2 + H2 ; K_x = 113.13
+H2O + H  <-> H2  + OH ; K_x = 22.182353
+OH  + CO <-> CO2 + H  ; K_x = 5.1

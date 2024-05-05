@@ -1,8 +1,6 @@
 #
 # Silicon vapor deposition
 #
-# format
-..str
 SiH4 <=> SiH2 + H2   
 SiH4 <=> SiH3 + H
 SiH4 + SiH2 <=> Si2H6

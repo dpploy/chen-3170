@@ -13,7 +13,7 @@
 # vapor (H2O). The hydroxyl radical then reacts with methane (CH4) to I #form a methyl radical (CH3·) and 
 # water vapor (H2O).
 #
-OH* + CH4 -> CH3* + H2O
+OH^* + CH4 -> CH3^* + H2O
 #
 # Propagation: In the propagation step, the methyl radical reacts with an oxygen molecule (O2) to form a 
 # peroxy #radical(CH3O2·). The peroxy radical then reacts with another methane molecule to form a methoxy 
@@ -21,18 +21,18 @@ OH* + CH4 -> CH3* + H2O
 # to form a second peroxy radical, which can react with #another methane molecule to continue the 
 # propagation cycle.
 #    
-CH3* + O2 -> CH3O2*
-CH3O2* + CH4 -> CH3O* + CH3OH
-CH3O2* + O2 -> CH3O2 + 2 O*
+CH3^* + O2 -> CH3O2^*
+CH3O2^* + CH4 -> CH3O^* + CH3OH
+CH3O2^* + O2 -> CH3O2 + 2 O^*
 #
 # Termination: The reaction terminates when two radicals react with each other to form a stable molecule. 
 # In the case of #methane combustion, the primary termination reactions are the recombination of hydroxyl 
 # radicals to form water vapor and the #recombination of methyl radicals to form ethane (C2H6).
 #
-#OH* + OH* -> H2O + O*
-2 OH* -> H2O + O*
-#CH3* + CH3* -> C2H6
-2 CH3* -> C2H6
+#OH^* + OH^* -> H2O + O^*
+2 OH^* -> H2O + O^*
+#CH3^* + CH3^* -> C2H6
+2 CH3^* -> C2H6
 #
 # Overall, the combustion of methane in air can be summarized by the following equation:
 #

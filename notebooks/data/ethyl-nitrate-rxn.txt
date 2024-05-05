@@ -1,12 +1,12 @@
 #
 # Ethyl nitrate pyrolysis
 #
-C2H5ONO2     <=> C2H5O + NO2       : K_x = 1.80e+00
-C2H5O        <=> CH3 + CH2O        : K_x = 9.50e+00
-CH3 + NO2    <=> CH3O + NO         : K_x = 2.31e+01
-CH3O + NO    <=> CH3NO2            : K_x = 2.50e+00
-C2H5O + NO2  <=> CH3CHO + HONO     : K_x = 4.79e+01
-2 HONO       <=> H2O + NO + NO2    : K_x = 2.18e-01
-CH3CHO + NO2 <=> CO + H2O + NO + X : K_x = 1.56e-02
-C2H5O + NO   <=> C2H5ONO           : K_x = 2.32e+01
-C2H5O + NO   <=> CH3CHO + HNO      : K_x = 1.88e-02
+C2H5ONO2     <=> C2H5O + NO2       ; K_x = 1.80e+00
+C2H5O        <=> CH3 + CH2O        ; K_x = 9.50e+00
+CH3 + NO2    <=> CH3O + NO         ; K_x = 2.31e+01
+CH3O + NO    <=> CH3NO2            ; K_x = 2.50e+00
+C2H5O + NO2  <=> CH3CHO + HONO     ; K_x = 4.79e+01
+2 HONO       <=> H2O + NO + NO2    ; K_x = 2.18e-01
+CH3CHO + NO2 <=> CO + H2O + NO + X ; K_x = 1.56e-02
+C2H5O + NO   <=> C2H5ONO           ; K_x = 2.32e+01
+C2H5O + NO   <=> CH3CHO + HNO      ; K_x = 1.88e-02

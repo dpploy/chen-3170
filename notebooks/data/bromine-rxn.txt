@@ -1,9 +1,9 @@
 #
 # Bromine hydrogenation
 #
-H2 + Br2 <=> 2 HBr    : K_x = 1.0e-01
-Br2      <=> 2 Br     : K_x = 1.0e+00
-Br + H2  <=> HBr + H  : K_x = 1.0e-01
-H + Br2  <=> HBr + Br : K_x = 1.0e+01
-H + HBr  <=> H2 + Br  : K_x = 1.0e+01
-2 Br     <=> Br2      : K_x = 1.0e-00
+H2 + Br2 <=> 2 HBr    ; K_x = 1.0e-01
+Br2      <=> 2 Br     ; K_x = 1.0e+00
+Br + H2  <=> HBr + H  ; K_x = 1.0e-01
+H + Br2  <=> HBr + Br ; K_x = 1.0e+01
+H + HBr  <=> H2 + Br  ; K_x = 1.0e+01
+2 Br     <=> Br2      ; K_x = 1.0e-00

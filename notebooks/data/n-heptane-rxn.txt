@@ -1,8 +1,6 @@
 #
 # N-heptane oxidation mechanism 2006 PIMechEng 220, 991
 #
-# format
-..str:float
 NC7H16 + OH   <=> C7H15-3 + H2O
 NC7H16 + HO2  <=> C7H15-3 + H2O2
 NC7H16 + O2   <=> C7H15-3 + HO2

@@ -1,27 +1,27 @@
 #
 # Nitric acid radiolysis (sample)
 #
-*NO3^2- + H^+ <-> *NO2 + OH^-
-e^- + NO3^- <-> *NO3^2-
-*NO3^2- + H^+ <-> HNO3 + e^-
-*NO3^2- + *OH <-> NO3^- + OH^-
-*NO3^2- + O2 <-> NO3^- + O2^-
+^*NO3^2- + H^+ <-> ^*NO2 + OH^-
+e^- + NO3^- <-> ^*NO3^2-
+^*NO3^2- + H^+ <-> HNO3 + e^-
+^*NO3^2- + ^*OH <-> NO3^- + OH^-
+^*NO3^2- + O2 <-> NO3^- + O2^-
 N2O4 + H2O <-> NO3^- + NO2^- + 2 H^+
-*NO2 + *OH <-> NO3^- + H^+
-*NO2 + H* <-> HNO2
-*NO2 + HO2* <-> O2NO2H
+^*NO2 + ^*OH <-> NO3^- + H^+
+^*NO2 + H^* <-> HNO2
+^*NO2 + HO2^* <-> O2NO2H
 O2NO2H <-> O2NO2^- + H^+
 O2NO2^- + H^+ <-> O2NO2H
 O2NO2^- + H^+ + 2 e^- <-> OH^- + NO3^-
-O2NO2H + e^- <-> *OH + NO3^-
-NO2^- + *OH <-> *NO2 + OH^-
+O2NO2H + e^- <-> ^*OH + NO3^-
+NO2^- + ^*OH <-> ^*NO2 + OH^-
 NO2^- + e^- <-> NO2^2-
 NO2^- + H2O + e^- <-> NO + 2 OH^-
-ONO2H + e^- <-> *NO2 + OH^-
+ONO2H + e^- <-> ^*NO2 + OH^-
 NO + e^- <-> NO^-
-NO + H* <-> NO^- + H^+
-NO + *OH <-> NO2^- + H^+
+NO + H^* <-> NO^- + H^+
+NO + ^*OH <-> NO2^- + H^+
 NO + O2^- <-> ONO2^-
-NO + HO2* <-> ONO2H
-ONO2^- + e^- + H2O <-> *NO2 + 2 OH^-
-*NO2 + NO + H2O <-> 2 HNO2
+NO + HO2^* <-> ONO2H
+ONO2^- + e^- + H2O <-> ^*NO2 + 2 OH^-
+^*NO2 + NO + H2O <-> 2 HNO2
