@@ -1,4 +1,4 @@
-# ChEn-3170 Computational Methods in Chemical Engineering 
+# ChEn-3170 Computational Methods in Nuclear Chemical Engineering 
 
 [![NBViewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](http://nbviewer.jupyter.org/github/dpploy/chen-3170/tree/master/notebooks)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dpploy/chen-3170/master)
@@ -6,22 +6,19 @@
 ![Website](https://img.shields.io/website/https/github.com/dpploy/chen-3170.svg)
 [![Size](https://img.shields.io/github/repo-size/dpploy/chen-3170.svg?label=size&style=flat)](https://github.com/dpploy/chen-3170)
 
-   + [University of Massachusetts Lowell](https://www.uml.edu/), Spring 2024
-   + [Dept. of Chemical Engineering](https://www.uml.edu/Engineering/Chemical/) (Nuclear Program)
-   + [Prof. Valmor F. de Almeida](https://www.uml.edu/Engineering/Chemical/faculty/de-Almeida-Valmor.aspx) (valmor_dealmeida@uml.edu)
+   + [Cortix Tech](https://cortix.tech/), Training & Certification
 
 ![](notebooks/images/ls-fourier.png)
 
-The goal of this course is to present to students of (nuclear) chemical engineering an interconnected set of computational methods needed in the core undergraduate chemical engineering curriculum. In particular, methods that assist the students in solving problems in the core areas of chemical reaction equilibria, separations, unit operations, and chemical reactor engineering with applications in nuclear and biochemical engineering.
+The goal of this training course is to present to professionals of (nuclear) chemical engineering an interconnected set of computational methods needed in the core undergraduate chemical engineering curriculum. In particular, methods that assist professionals in solving problems in the core areas of chemical reaction equilibria, separations, unit operations, and chemical reactor engineering with applications in nuclear and chemical engineering.
 
-This three-credit lecture course (and one additional contact hour) over fifteen weeks, consists of Jupyter notebooks used for lectures (numbered 01 to 21) and laboratory work (labwork-01 to 14) for students to practice their skills in computer-aided problem solving (see `notebooks/`). The assumption is that students have little computer pragramming experience and are currently taking the core courses in chemical engineering up to the second semester of the junior year. Therefore this course is a mix of computational methods and computer programming (in python language) aimed at helping students in the remaining portion of their curriculum course work. 
+This course is equivalent to a 4-credit class over fifteen weeks, it consists of Jupyter notebooks used for lectures (numbered 01 to 21) and laboratory work (labwork-01 to 14) for professionals to practice their skills in computer-aided problem solving (see `notebooks/`). The assumption is that professionals have little computer pragramming experience and have taken core courses in chemical engineering up to the second semester of the junior year. Therefore this course is a mix of computational methods and computer programming (in python language) aimed at helping attendees in the remaining portion of their curriculum course work. 
 
 *Past versions of this course are available in this repository as [releases](https://github.com/dpploy/chen-3170/releases) including labwork and exams.*
 
 Feedback and collaboration to improve this course are welcome through GitHub `pull requests` and `issues` or direct email. 
 
-This course uses Jupyter Notebooks in Python programming language. The content can be accessed in
-the following ways:
+This course uses Jupyter Notebooks in Python programming language. The content can be accessed in the following ways:
 + Static HTML version of the notebooks will be displayed on the current browser if a 
 notebook file listed in the code repository, `notebook/` is clicked on. This will not allow for rendering mathematical formulae. Alternatively you can render the notebooks on [NBViewer](http://nbviewer.jupyter.org/) by **clicking on the [![NBViewer](https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/dpploy/chen-3170/tree/master/notebooks/) badge above**.
 + Click on the `launch/binder` badge above to launch a Jupyter Notebook server for the
@@ -33,4 +30,7 @@ clicking on individual notebook files, you will access the live course notebooks
 
 Thanks in advance for inputs to improve this course.\
 Regards,\
-Prof. Valmor F. de Almeida
+Dr. Valmor F. de Almeida, Cortix Tech
+
+## History
+This training material was developed and used for many years by Dr. Valmor F. de Almeida while teaching as an associate professor of nuclear chemical engineering at UMass Lowell USA. This is now offered as training and certification at Cortix Tech.
