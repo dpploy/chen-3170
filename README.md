@@ -1,4 +1,4 @@
-# CT-300 Computational Methods in Nuclear Chemical Engineering 
+# CT-300: Computational Methods in Nuclear Chemical Engineering 
 
 [![NBViewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](http://nbviewer.jupyter.org/github/dpploy/chen-3170/tree/master/notebooks)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dpploy/chen-3170/master)
